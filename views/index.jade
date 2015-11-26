@@ -1,6 +1,26 @@
-extends layout
+extends _layout
 
 block content
+  // FACEBOOK WIDGET
+  #fb-root
+  script.
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  //- script(startLogoSpinner:  function() {
+  //-         $(".logo-left, .logo-right").mouseenter(function () {
+  //-             $(".logo-left").rotate({
+  //-               angle:0,
+  //-               animateTo:360
+  //-             });
+  //-         });
+  //-     })
+
   .navbar-wrapper
     .container
       nav.navbar.navbar-inverse.navbar-static-top
@@ -11,7 +31,7 @@ block content
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='#') Project name
+            a.navbar-brand(href='#') UVic FSAE
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav
               li.active
@@ -40,15 +60,15 @@ block content
   //
     Carousel
     ==================================================
-  #myCarousel.carousel.slide(data-ride='carousel')
+  #myCarousel.carousel.slide(data-ride='carousel' style='margin-bottom:10px')
     // Indicators
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to='0')
       li(data-target='#myCarousel', data-slide-to='1')
       li(data-target='#myCarousel', data-slide-to='2')
     .carousel-inner(role='listbox')
-      .item.active
-        img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='First slide')
+      .item.uvic-carousel.active
+        //- img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='First slide')
         .container
           .carousel-caption
             h1 Example headline.
@@ -58,8 +78,8 @@ block content
               |  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
             p
               a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
-      .item
-        img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
+      .item.uvic-carousel
+        //- img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
         .container
           .carousel-caption
             h1 Another example headline.
@@ -67,8 +87,8 @@ block content
               | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
             p
               a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
-      .item
-        img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
+      .item.uvic-carousel
+        //- img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
         .container
           .carousel-caption
             h1 One more for good measure.
@@ -82,79 +102,102 @@ block content
     a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
       span.sr-only Next
-  // /.carousel
-  //
-    Marketing messaging and featurettes
-    ==================================================
-  // Wrap the rest of the page in another container to center all the content.
+
+  div.uvic-edge
+  //  Marketing messaging and featurettes
+  //  ==================================================
+  //  Wrap the rest of the page in another container to center all the content.
+  .row(style='padding-left:20%;padding-right:20%')
+    .col-xs-6.col-sm-3(style='padding-bottom:10px')
+      a.btn.btn-block.btn-social.btn-twitter
+        span.fa.fa-twitter
+        |  Twitter
+    .col-xs-6.col-sm-3(style='padding-bottom:10px')
+      a.btn.btn-block.btn-social.btn-facebook
+        span.fa.fa-facebook
+        |  Facebook
+    .col-xs-6.col-sm-3(style='padding-bottom:10px')
+      a.btn.btn-block.btn-social.btn-instagram
+        span.fa.fa-instagram
+        |  Instagram
+    .col-xs-6.col-sm-3(style='padding-bottom:10px')
+      a.btn.btn-block.btn-social.btn-flickr
+        span.fa.fa-flickr
+        |  Flickr
+
+  hr
+
   .container.marketing
     // Three columns of text below the carousel
     .row
+
+      //col-lg-3
       .col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+        img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h2 Heading
         p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+          | Duis mollis, est non
         p
           a.btn.btn-default(href='#', role='button') View details »
-      // /.col-lg-4
+
+      //col-lg-6
       .col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+        .box.feature.fb-page(data-href='https://www.facebook.com/UVicFSae', data-width='500', data-height='300', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-show-posts='true')
+          .fb-xfbml-parse-ignore
+            blockquote(cite='https://www.facebook.com/UVicFSae')
+              a(href='https://www.facebook.com/UVicFSae') UVic Formula SAE
+
+      //col-lg-3
+      .col-lg-4
+        img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h2 Heading
         p
-          | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          | Donec sed odio dui.
         p
           a.btn.btn-default(href='#', role='button') View details »
-      // /.col-lg-4
-      .col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        p
-          a.btn.btn-default(href='#', role='button') View details »
-      // /.col-lg-4
-    // /.row
-    // START THE FEATURETTES
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7
-        h2.featurette-heading
-          | First featurette heading.
-          span.text-muted It'll blow your mind.
-        p.lead
-          | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5
-        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7.col-md-push-5
-        h2.featurette-heading
-          | Oh yeah, it's that good.
-          span.text-muted See for yourself.
-        p.lead
-          | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5.col-md-pull-7
-        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7
-        h2.featurette-heading
-          | And lastly, this one.
-          span.text-muted Checkmate.
-        p.lead
-          | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5
-        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
-    hr.featurette-divider
-    // /END THE FEATURETTES
+
+
+
+    //- // START THE FEATURETTES
+    //- hr.featurette-divider
+    //- .row.featurette
+    //-   .col-md-7
+    //-     h2.featurette-heading
+    //-       | First featurette heading.
+    //-       span.text-muted It'll blow your mind.
+    //-     p.lead
+    //-       | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    //-   .col-md-5
+    //-     img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+    //- hr.featurette-divider
+    //- .row.featurette
+    //-   .col-md-7.col-md-push-5
+    //-     h2.featurette-heading
+    //-       | Oh yeah, it's that good.
+    //-       span.text-muted See for yourself.
+    //-     p.lead
+    //-       | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    //-   .col-md-5.col-md-pull-7
+    //-     img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+    //- hr.featurette-divider
+    //- .row.featurette
+    //-   .col-md-7
+    //-     h2.featurette-heading
+    //-       | And lastly, this one.
+    //-       span.text-muted Checkmate.
+    //-     p.lead
+    //-       | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    //-   .col-md-5
+    //-     img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+    //- hr.featurette-divider
+    //- // /END THE FEATURETTES
     // FOOTER
     footer
       p.pull-right
         a(href='#') Back to top
       p
-        | © 2014 Company, Inc. ·
-        a(href='#') Privacy
-        |  ·
-        a(href='#') Terms
+        | © 2015 UVic Formula Motorsport. All Rights Reserved ·
+        //- a(href='#') Privacy
+        //- |  ·
+        //- a(href='#') Terms
   // /.container
