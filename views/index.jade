@@ -87,32 +87,34 @@ block content
   //  Marketing messaging and featurettes
   //  ==================================================
   //  Wrap the rest of the page in another container to center all the content.
-  .row(style='padding-left:20%;padding-right:20%')
-    .col-xs-6.col-sm-3(style='padding-bottom:10px')
-      a.btn.btn-block.btn-social.btn-twitter
+  .row(style='margin-left:20%;margin-right:20%')
+    .col-xs-6.col-sm-3(style='margin-bottom:10px')
+      a.btn.btn-block.btn-social.btn-twitter.social-media-button(href="https://twitter.com/uvicfsae")
         span.fa.fa-twitter
         |  Twitter
-    .col-xs-6.col-sm-3(style='padding-bottom:10px')
-      a.btn.btn-block.btn-social.btn-facebook
+    .col-xs-6.col-sm-3(style='margin-bottom:10px')
+      a.btn.btn-block.btn-social.btn-facebook.social-media-button(href="https://www.facebook.com/UVicFSae/")
         span.fa.fa-facebook
         |  Facebook
-    .col-xs-6.col-sm-3(style='padding-bottom:10px')
-      a.btn.btn-block.btn-social.btn-instagram
+    .col-xs-6.col-sm-3(style='margin-bottom:10px')
+      a.btn.btn-block.btn-social.btn-instagram.social-media-button(href="https://www.instagram.com/uvicfsae/")
         span.fa.fa-instagram
         |  Instagram
-    .col-xs-6.col-sm-3(style='padding-bottom:10px')
-      a.btn.btn-block.btn-social.btn-flickr
+    .col-xs-6.col-sm-3(style='margin-bottom:10px')
+      a.btn.btn-block.btn-social.btn-flickr.social-media-button(href="https://www.flickr.com/photos/uvicfsae/albums")
         span.fa.fa-flickr
         |  Flickr
 
   hr
-  .row.featurette
+  .row(style='margin-left:15%;margin-right:15%')
     .col-md-12
-      h2.featurette-heading
-        | First featurette heading.
-        span.text-muted It'll blow your mind.
-      p.lead
-        | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      h5
+        | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
+      h5
+        | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
+      h4(style="text-align:center")
+        | Please <a href="#">Contact Us</a> if you want to know more!
+
 
   hr
   .container.marketing
@@ -122,7 +124,7 @@ block content
       //col-lg-6
       .col-lg-4
         a(href='http://www.r410.ca/')
-          img.img-rounded(src='img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='100')
+          img.img-rounded(src='img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h2 Heading
         p
@@ -133,7 +135,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://engineersmachineshop.ca')
-          img.img-rounded(src='img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='100')
+          img.img-rounded(src='img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h2 Heading
         p
@@ -144,7 +146,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://eaglemachine.ca/')
-          img.img-rounded(src='img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='100')
+          img.img-rounded(src='img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h2 Heading
         p
@@ -155,7 +157,6 @@ block content
 
 
     //- // START THE FEATURETTES
-    vv
     //- hr.featurette-divider
     //- .row.featurette
     //-   .col-md-7.col-md-push-5
