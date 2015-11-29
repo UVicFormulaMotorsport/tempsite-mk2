@@ -14,7 +14,7 @@ block content
             a.navbar-brand(href='#') UVic FSAE
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
-              li.active
+              li
                 a(href='/') Home
               li
                 a(href='/sponsorship') Sponsorship
@@ -30,58 +30,43 @@ block content
                     a(href='/about/team') The Team
                   li
                     a(href='/about/comp') The Competition
-              li
+              li.active
                 a(href='/contact') Contact
-  //
-    Carousel
-    ==================================================
-  #myCarousel.carousel.slide(data-ride='carousel' style='margin-bottom:0px')
-    // Indicators
-    ol.carousel-indicators
-      li.active(data-target='#myCarousel', data-slide-to='0')
-      li(data-target='#myCarousel', data-slide-to='1')
-      li(data-target='#myCarousel', data-slide-to='2')
-    .carousel-inner(role='listbox')
-      .item.uvic-carousel.active
-        img.first-slide(src='/img/slide1.png', alt='First slide', style="position:absolute;resize:none;min-width:100%;max-width:none;overflow:hidden;height:500px")
-        .container
-          //- img.first-slide(src='img/slide1.png', alt='First slide', align="center")
-          .carousel-caption
-            .carouseltext
-              h1 How do we build it?
-              p
-                | View information about our cars and how they've progressed over the years.
-            p
-              a.btn.btn-lg.btn-primary(href='/about/', role='button') About The Car
-      .item.uvic-carousel
-        //- img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
-        .container
-          .carousel-caption
-            h1 Another example headline.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
-      .item.uvic-carousel
-        //- img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
-        .container
-          .carousel-caption
-            h1 One more for good measure.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
-    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-      span.sr-only Previous
-    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-      span.sr-only Next
 
-  div.uvic-edge
   //  Marketing messaging and featurettes
   //  ==================================================
   //  Wrap the rest of the page in another container to center all the content.
+  .container
+    .row
+      h2 Contact Us
+      br
+      .col-sm-4
+        p
+          | UVic Formula SAE
+          br
+          | University of Victoria
+          br
+          | 3800 Finnerty Road
+          br
+          | Engineering Deans Office ; Room 248
+          br
+          | Victoria, BC, Canada
+          br
+          | V8W 3P6
+      .col-sm-4
+        p
+          strong Phone:
+          |  250 721-6014
+          br
+          strong Fax (EOW Office):
+          |  250 721-8676
+      .col-sm-4
+        p
+          | Join us at one of our weekly meetings in the Engineering and Computer Science Building or at our shop at the bottom of parking lot 5 by University House 2.
+          strong Weekly Meetings:
+          |  Tuesdays at 8pm in ECS 124
+
+  br
   .row(style='margin-left:20%;margin-right:20%')
     .col-xs-6.col-sm-3(style='margin-bottom:10px')
       a.btn.btn-block.btn-social.btn-twitter.social-media-button(href="https://twitter.com/uvicfsae")

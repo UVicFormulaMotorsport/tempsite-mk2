@@ -1,3 +1,4 @@
+body { padding-top: 50px; }
 .carousel-control.left, .carousel-control.right {background-image: none;}
 .carousel .container {background-color: #0c5c98;}
 .carousel .item {background-color: #0c5c98;}
