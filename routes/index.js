@@ -12,17 +12,17 @@ router.get('/sponsorship/', function(req, res, next) {
 });
 
 /* GET */
-router.get('/about/car/', function(req, res, next) {
+router.get('/aboutcar/', function(req, res, next) {
   res.render('car', { title: 'UVic FSAE | The Car' });
 });
 
 /* GET */
-router.get('/about/team/', function(req, res, next) {
+router.get('/aboutteam/', function(req, res, next) {
   res.render('team', { title: 'UVic FSAE | The Team' });
 });
 
 /* GET */
-router.get('/about/comp/', function(req, res, next) {
+router.get('/aboutcomp/', function(req, res, next) {
   res.render('comp', { title: 'UVic FSAE | The Competition' });
 });
 

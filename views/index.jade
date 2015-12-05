@@ -11,7 +11,8 @@ block content
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='#') UVic FSAE
+            a(href='/')
+              img(src='/img/logo_invert.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
               li.active
@@ -25,52 +26,55 @@ block content
                   span.caret
                 ul.dropdown-menu
                   li
-                    a(href='/about/car') The Car
+                    a(href='/aboutcar') The Car
                   li
-                    a(href='/about/team') The Team
+                    a(href='/aboutteam') The Team
                   li
-                    a(href='/about/comp') The Competition
+                    a(href='/aboutcomp') The Competition
               li
                 a(href='/contact') Contact
   //
     Carousel
     ==================================================
   #myCarousel.carousel.slide(data-ride='carousel' style='margin-bottom:0px')
-    // Indicators
+    //- Indicators
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to='0')
       li(data-target='#myCarousel', data-slide-to='1')
       li(data-target='#myCarousel', data-slide-to='2')
-    .carousel-inner(role='listbox')
+    #top.carousel-inner(role='listbox')
       .item.uvic-carousel.active
-        img.first-slide(src='/img/slide1.png', alt='First slide', style="position:absolute;resize:none;min-width:100%;max-width:none;overflow:hidden;height:500px")
+        img.first-slide(src='/img/slide1.png', alt='First slide', style="object-fit:cover;")
         .container
           //- img.first-slide(src='img/slide1.png', alt='First slide', align="center")
           .carousel-caption
-            .carouseltext
-              h1 How do we build it?
+            span(style="display:inline-block;")
+              .carouseltext(style="padding-left:20px;padding-right:20px;")
+                h1 How do we build it?
               p
-                | View information about our cars and how they've progressed over the years.
-            p
-              a.btn.btn-lg.btn-primary(href='/about/', role='button') About The Car
+                a.btn.btn-lg.btn-primary(href='/aboutcar/', role='button') About The Car
       .item.uvic-carousel
+        img.first-slide(src='/img/slide2.jpg', alt='First slide', style="object-fit:cover;")
         //- img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
         .container
           .carousel-caption
-            h1 Another example headline.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+
+            span(style="display:inline-block;")
+              .carouseltext(style="padding-left:20px;padding-right:20px;")
+                h1
+                  | Want to know how we compete?
+              p
+                a.btn.btn-lg.btn-primary(href='/aboutcomp/', role='button') About The Competition
       .item.uvic-carousel
+        img.first-slide(src='/img/slide3.jpg', alt='First slide', style="object-fit:cover;")
         //- img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
         .container
           .carousel-caption
-            h1 One more for good measure.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+            span(style="display:inline-block;")
+              .carouseltext(style="padding-left:20px;padding-right:20px;")
+                h1 We are fun student team!
+              p
+                a.btn.btn-lg.btn-primary(href='/aboutteam/', role='button') About The Team
     a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
       span.sr-only Previous
@@ -108,7 +112,7 @@ block content
       h5
         | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
       h4(style="text-align:center")
-        | Please <a href="#">Contact Us</a> if you want to know more!
+        | Please <a href="/contact/">Contact Us</a> if you want to know more!
 
 
   hr
@@ -149,37 +153,10 @@ block content
           a.btn.btn-default(href='http://eaglemachine.ca/', role='button') Website
 
 
-
-    //- // START THE FEATURETTES
-    //- hr.featurette-divider
-    //- .row.featurette
-    //-   .col-md-7.col-md-push-5
-    //-     h2.featurette-heading
-    //-       | Oh yeah, it's that good.
-    //-       span.text-muted See for yourself.
-    //-     p.lead
-    //-       | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-    //-   .col-md-5.col-md-pull-7
-    //-     img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
-    //- hr.featurette-divider
-    //- .row.featurette
-    //-   .col-md-7
-    //-     h2.featurette-heading
-    //-       | And lastly, this one.
-    //-       span.text-muted Checkmate.
-    //-     p.lead
-    //-       | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-    //-   .col-md-5
-    //-     img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
-    //- hr.featurette-divider
-    //- // /END THE FEATURETTES
-    // FOOTER
-    footer
-      p.pull-right
-        a(href='#') Back to top
-      p(align="center")
-        | © 2015 UVic Formula Motorsport. All Rights Reserved ·
-        //- a(href='#') Privacy
-        //- |  ·
-        //- a(href='#') Terms
-  // /.container
+  hr
+  // FOOTER
+  footer
+    p(align="center")
+      | © 2015 UVic Formula Motorsport. All Rights Reserved
+    p.pull-right
+      a(href='#top') Back to top
