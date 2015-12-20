@@ -90,26 +90,8 @@ block content
       span.sr-only Next
 
   div.uvic-edge
-  //  Marketing messaging and featurettes
-  //  ==================================================
-  //  Wrap the rest of the page in another container to center all the content.
-  .row(style='margin-left:20%;margin-right:20%')
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-twitter.social-media-button(href="https://twitter.com/uvicfsae")
-        span.fa.fa-twitter
-        |  Twitter
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-facebook.social-media-button(href="https://www.facebook.com/UVicFSae/")
-        span.fa.fa-facebook
-        |  Facebook
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-instagram.social-media-button(href="https://www.instagram.com/uvicfsae/")
-        span.fa.fa-instagram
-        |  Instagram
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-flickr.social-media-button(href="https://www.flickr.com/photos/uvicfsae/albums")
-        span.fa.fa-flickr
-        |  Flickr
+
+  include _socialmedia.jade
 
 
   .row(style='margin-left:15%;margin-right:15%')
@@ -121,44 +103,7 @@ block content
       h4(style="text-align:center")
         | Please <a href="/contact/">Contact Us</a> if you want to know more!
 
-
-  hr
-  .container.marketing
-    // Three columns of text below the carousel
-    .row
-      //col-lg-6
-      .col-lg-4
-        a(href='http://www.r410.ca/')
-          img.img-rounded(src='img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
-        //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h3 R-410 Holdings
-        p
-          | Carbon fibre and composite materials.
-        p
-          a.btn.btn-default(href='http://www.r410.ca/', role='button') Website
-
-      //col-lg-3
-      .col-lg-4
-        a(href='http://engineersmachineshop.ca')
-          img.img-rounded(src='img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
-        //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h3 Prototype Equipment Design
-        p
-          | Built the torsion T1 for our car.
-        p
-          a.btn.btn-default(href='http://engineersmachineshop.ca/', role='button') Website
-
-      //col-lg-3
-      .col-lg-4
-        a(href='http://eaglemachine.ca/')
-          img.img-rounded(src='img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
-        //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h3 Eagle Machine Inc.
-        p
-          | High precision gear cutting and engine manufacturing.
-        p
-          a.btn.btn-default(href='http://eaglemachine.ca/', role='button') Website
-
+  include _sponsors.jade
 
   hr
   // FOOTER

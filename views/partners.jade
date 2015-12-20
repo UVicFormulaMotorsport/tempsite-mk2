@@ -41,108 +41,163 @@ block content
               li
                 a(href='/contact/') Contact
 
+  include _socialmedia.jade
 
-  .row(style='margin-left:20%;margin-right:20%;margin-top:20px')
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-twitter.social-media-button(href="https://twitter.com/uvicfsae")
-        span.fa.fa-twitter
-        |  Twitter
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-facebook.social-media-button(href="https://www.facebook.com/UVicFSae/")
-        span.fa.fa-facebook
-        |  Facebook
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-instagram.social-media-button(href="https://www.instagram.com/uvicfsae/")
-        span.fa.fa-instagram
-        |  Instagram
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-flickr.social-media-button(href="https://www.flickr.com/photos/uvicfsae/albums")
-        span.fa.fa-flickr
-        |  Flickr
+  // TITLE
+  div(style="box-shadow: 0px -10px 14px rgba(0,0,0,0.4),0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
+          hr
+        .col-xs-12.titlesponsor
+          h1(style="color:black;text-align:center;")
+            | This could be you!
+          br
+          br
 
-
-  .container.marketing
-    .row
-      .col-xs-12
-        h1(style="color:black;text-align:center;text-decoration:underline") Sponsorship
-        br
-        br
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-
-      .col-md-6.col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+  // PLATINUM
+  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/platinum.png")
+          hr
+        .col-xs-12.platinumsponsor
+          p(style="color:black;text-align:center;")
+            a(href='http://www.r410.ca/')
+              img(src='/img/sponsors/r-410_sm.png')
+            a(href='http://eaglemachine.ca/')
+              img(src='/img/sponsors/eaglemach_lg.jpg')
+            a(href='http://engineersmachineshop.ca')
+              img(src='/img/sponsors/prototypeequip_lg.png')
 
 
+  // GOLD
+  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/gold.png")
+          hr
+        .col-xs-12.goldsponsor
+          p(style="color:black;text-align:center;")
+            a(href='http://www.crp-usa.net/')
+              img(src='/img/sponsors/crpusa_med.jpg')
+            a(href='http://honda.ca')
+              img(src='/img/sponsors/honda_med.png')
+            a(href='http://elcamauto.net/')
+              img(src='/img/sponsors/elcam_sm.jpg')
+            a(href='https://www.uvic.ca/engineering/')
+              img(src='/img/sponsors/uvicengr_med.jpg')
+            a(href='http://ess.uvic.ca/')
+              img(src='/img/sponsors/uvicess_med.jpg')
+
+  // SILVER
+  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/silver.png")
+          hr
+        .col-xs-12.silversponsor
+          p(style="color:black;text-align:center;")
+            a(href='http://www.drakecontracting.ca/')
+              img(src='/img/sponsors/drakecontracting_sm.jpg')
+            a(href='http://altium.com')
+              img(src='/img/sponsors/altium_med.jpg')
+            a(href='http://www.solidworks.com/')
+              img(src='/img/sponsors/solidworks_sm2.png')
+            a(href='http://www.passionsports.ca/')
+              img(src='/img/sponsors/passionsports_sm.jpg')
 
 
+  // BRONZE
+  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/bronze.png")
+          hr
+        .col-xs-12.bronzesponsor
+          p(style="color:black;text-align:center;")
+            a(href='http://www.gtisoft.com/')
+              img(src='/img/sponsors/gammatech_lg.jpg')
+            a(href='http://apeg.bc.ca')
+              img(src='/img/sponsors/apeg_sm.jpg')
+            a(href='https://www.flowdock.com/')
+              img(src='/img/sponsors/flowdock_sm.jpeg')
+            a(href='http://www.lordco.com/')
+              img(src='/img/sponsors/lordco_sm.jpg')
+            a(href='http://camosun.ca/')
+              img(src='/img/sponsors/camosun_sm.png')
+            a(href='http://alumni.uvic.ca')
+              img(src='/img/sponsors/uvicalum_lg.jpg')
+            a(href='http://www.bradycanada.ca/')
+              img(src='/img/sponsors/brady_sm.jpg')
+            a(href='http://northarm.bc.ca/')
+              img(src='/img/sponsors/northarm_sm.png')
+            a(href='http://www.asenz360services.com/vpmap/DIST/Wcanada.html')
+              img(src='/img/sponsors/vpfuel_sm.jpg')
+            a(href='http://www.racequip.com/')
+              img(src='/img/sponsors/racequip_sm.jpg')
+            a(href='https://www.holley.com/')
+              img(src='/img/sponsors/holley-comb_sm.jpg')
+            a(href='http://www.mitutoyo.ca/')
+              img(src='/img/sponsors/mitutoyo_med.jpg')
+
+
+  // STEEL
+  div(style="margin-bottom:10px;",width="100%")
+    .container.marketing.sponsors(style="margin-bottom:10px;",width="100%")
+      .row
+        .col-xs-12
+          h1(style="color:black;text-align:center;")
+            img(src="/img/sponsors/logos/steel.png")
+          hr
+        .col-xs-12.steelsponsor
+          p(style="color:black;text-align:center;")
+            a(href='http://www.empireds.com/')
+              img(src='/img/sponsors/dynamicstructures_med.png')
+            a(href='http://earthxmotorsports.com/')
+              img(src='/img/sponsors/earthx_med.jpg')
+            a(href='http://www.waytekwire.com/')
+              img(src='/img/sponsors/waytek_sm.png')
+            a(href='http://metalsupermarkets.ca')
+              img(src='/img/sponsors/metalsuper_lg.jpg')
+            a(href='http://schaeffler.com')
+              img(src='/img/sponsors/schaeffler_lg.jpg')
+            a(href='http://cartesiantube.com')
+              img(src='/img/sponsors/cartesian_lg.jpg')
+            a(href='http://www.mongoosemachine.com/')
+              img(src='/img/sponsors/mongoose_sm.png')
+            a(href='http://www.wirecare.com/')
+              img.wirecare(src='/img/sponsors/wirecare_sm.jpeg')
+            a(href='http://www.metalsandplastics.ca/')
+              img(src='/img/sponsors/genmetal_sm.jpg')
+            a(href='http://www.texense.com/en/')
+              img(src='/img/sponsors/texense_sm.jpg')
+            a(href='http://www.dynatune-xl.com/')
+              img(src='/img/sponsors/dynatune_sm.png')
+            a(href='http://www.calspan.com/')
+              img(src='/img/sponsors/calspan_sm.png')
+            a(href='http://anotechanodizing.com')
+              img(src='/img/sponsors/anotekano_sm.gif')
+            a(href='https://www.hoosiertire.com/')
+              img(src='/img/sponsors/hoosier_sm.jpg')
+            a(href='http://www.corsa-technic.com/')
+              img(src='/img/sponsors/corsatech_sm.gif')
+            a(href='http://www.watsongloves.com/')
+              img(src='/img/sponsors/watson_sm.jpg')
+            a(href='http://www.adriennesteagarden.com/')
+              img(src='/img/sponsors/adrienne_med.jpg')
+            a(href='http://www.westernspeedway.net/')
+              img(src='/img/sponsors/western_med.png')
 
   hr
   // FOOTER
