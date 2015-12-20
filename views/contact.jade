@@ -17,8 +17,15 @@ block content
             ul.nav.navbar-nav.navbar-right
               li
                 a(href='/') Home
-              li
-                a(href='/sponsorship') Sponsorship
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Partners
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/becomeapartner/') Become  Partner
+                  li
+                    a(href='/partners/') UV16 Partners
 
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
@@ -26,13 +33,13 @@ block content
                   span.caret
                 ul.dropdown-menu
                   li
-                    a(href='/aboutcar') The Car
+                    a(href='/aboutcar/') The Car
                   li
-                    a(href='/aboutteam') The Team
+                    a(href='/aboutteam/') The Team
                   li
-                    a(href='/aboutcomp') The Competition
+                    a(href='/aboutcomp/') The Competition
               li.active
-                a(href='/contact') Contact
+                a(href='/contact/') Contact
 
   //  Marketing messaging and featurettes
   //  ==================================================
@@ -61,6 +68,10 @@ block content
           br
           strong Fax (EOW Office):
           |  250 721-8676
+          br
+          br
+          strong E-Mail:
+          |  "fsae (at) engr.uvic.ca"
       .col-sm-4
         p
           | Join us at one of our weekly meetings in the Engineering and Computer Science Building or at our shop at the bottom of parking lot 5 by University House 2.
@@ -89,16 +100,6 @@ block content
         |  Flickr
 
 
-  .row(style='margin-left:15%;margin-right:15%')
-    .col-md-12
-      h5
-        | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
-      h5
-        | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
-      h4(style="text-align:center")
-        | Please <a href="#">Contact Us</a> if you want to know more!
-
-
   hr
   .container.marketing
     // Three columns of text below the carousel
@@ -106,7 +107,7 @@ block content
       //col-lg-6
       .col-lg-4
         a(href='http://www.r410.ca/')
-          img.img-rounded(src='img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
+          img.img-rounded(src='/img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 R-410 Holdings
         p
@@ -117,7 +118,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://engineersmachineshop.ca')
-          img.img-rounded(src='img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
+          img.img-rounded(src='/img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 Prototype Equipment Design
         p
@@ -128,7 +129,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://eaglemachine.ca/')
-          img.img-rounded(src='img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
+          img.img-rounded(src='/img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 Eagle Machine Inc.
         p
@@ -141,5 +142,3 @@ block content
   footer
     p(align="center")
       | © 2015 UVic Formula Motorsport. All Rights Reserved
-    p.pull-right
-      a(href='#top') Back to top

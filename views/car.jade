@@ -1,6 +1,7 @@
 extends _layout
 
 block content
+  link(rel='stylesheet', href='/css/car.css')
   .navbar-wrapper
     .container
       nav.navbar.navbar-inverse.navbar-fixed-top
@@ -17,58 +18,39 @@ block content
             ul.nav.navbar-nav.navbar-right
               li
                 a(href='/') Home
-              li
-                a(href='/sponsorship') Sponsorship
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Partners
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/becomeapartner/') Become a Partner
+                  li
+                    a(href='/partners/') UV16 Partners
 
               li.dropdown.active
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                   | About
                   span.caret
                 ul.dropdown-menu
+                  li.active
+                    a(href='/aboutcar/') The Car
                   li
-                    a(href='/aboutcar') The Car
+                    a(href='/aboutteam/') The Team
                   li
-                    a(href='/aboutteam') The Team
-                  li
-                    a(href='/aboutcomp') The Competition
+                    a(href='/aboutcomp/') The Competition
               li
-                a(href='/contact') Contact
+                a(href='/contact/') Contact
 
   //  Marketing messaging and featurettes
   //  ==================================================
   //  Wrap the rest of the page in another container to center all the content.
   .container
-    #top.row
-      h1(style="color:black;text-align:center;text-decoration:underline") The Car
+    .row
+      h1(style="color:black;text-align:center;text-decoration:underline") UV15 Car
       br
-      .col-sm-4
-        p
-          | UVic Formula SAE
-          br
-          | University of Victoria
-          br
-          | 3800 Finnerty Road
-          br
-          | Engineering Deans Office ; Room 248
-          br
-          | Victoria, BC, Canada
-          br
-          | V8W 3P6
-      .col-sm-4
-        p
-          strong Phone:
-          |  250 721-6014
-          br
-          strong Fax (EOW Office):
-          |  250 721-8676
-      .col-sm-4
-        p
-          | Join us at one of our weekly meetings in the Engineering and Computer Science Building or at our shop at the bottom of parking lot 5 by University House 2.
-          br
-          br
-          strong Weekly Meetings:
-          |  Tuesdays at 8pm in ECS 124
-
+      .col-xs-12
+        iframe(src='/render/UV15 - Final - Aug8_VR.11.html', style="display: block; margin: 0 auto;", width='100%', height='720px', frameborder='10') iframe not supported by your browser
   br
   .row(style='margin-left:20%;margin-right:20%')
     .col-xs-6.col-sm-3(style='margin-bottom:10px')
@@ -88,17 +70,129 @@ block content
         span.fa.fa-flickr
         |  Flickr
 
+  // ABOUT THE CARS
+  .container
+    .row
+      .col-sm-4
+        .row
+          .col-xs-12
+            section.widget.thumbnails
+              h3(style="font-weight:800;") 2015 Car:
+              .col-xs-12.carblock
+                img(src='/img/car2015-2.jpg', alt='UV15')
 
-  .row(style='margin-left:15%;margin-right:15%')
-    .col-md-12
-      h5
-        | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
-      h5
-        | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
-      h4(style="text-align:center")
-        | Please <a href="#">Contact Us</a> if you want to know more!
+              h3(style="font-weight:800;") 2014 Car:
+              .col-xs-12.carblock
+                img(src='/img/car2014.jpg', alt='UV14')
+
+              h3(style="font-weight:800;") 2013 Car:
+              .col-xs-12.carblock
+                img(src='/img/car2013.jpg', alt='UV13')
+
+              h3(style="font-weight:800;") 2012 Car:
+              .col-xs-12.carblock
+                img(src='/img/car2012.jpg', alt='UV12')
+
+      .col-sm-8
+        // Content
+        #content
+          section.last
+            h3(style="font-weight:800;") 2015 Car Information
+            table.default
+              thead
+                tr
+                  th Specifications
+                  th
+              tbody
+                tr
+                  td Car Number
+                  td 119
+                tr
+                  td Color
+                  td Black and red two tone
+                tr
+                  td Frame
+                  td 4130 Chromoly steel space frame
+                tr
+                  td Aero
+                  td
+                    | Carbon Fibre: 3-Piece Body, Front and Rear 4-Element Wings, Diffuser, and 2 Sidepods
+                tr
+                  td Suspension
+                  td
+                    | Independent unequal length chromoly A-arms, with pull rod actuated Cane Creek shocks
+                tr
+                  td Wheels
+                  td
+                    | In house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
+                tr
+                  td Engine
+                  td Honda CBR 600 F4I with MegaSquirt MS3 ECM
+                tr
+                  td Power/Torque
+                  td 95 HP @ 12500 RPM/54 ft·lbs @ 8250 RPM
+                tr
+                  td Fuel
+                  td Pump 94 Octane
+                tr
+                  td Transmission
+                  td 6-speed Sequential
+                tr
+                  td Shifter
+                  td Electro-pneumatic, button actuated shifting system resulting in sub-100ms shifts
+                tr
+                  td Final Drive
+                  td #520 chain, 11:44 ratio
+                tr
+                  td Differential
+                  td Custom aluminum carrier housing Zexel-Torsen torque biasing gears
+                tr
+                  td Brakes, Front
+                  td Fixed 9.2" Grey Cast Iron Rotors, Brembo Calipers
+                tr
+                  td Brakes, Rear
+                  td Fixed Grey" 8 Cast Iron Rotors, Brembo Calipers
+              thead
+                tr
+                  th Dimensions
+                  th
+              tbody
+                tr
+                  td Wheelbase
+                  td 63″
+                tr
+                  td Track, Front/Rear
+                  td 47.5″/44.5″
+                tr
+                  td Length
+                  td 107.4″
+                tr
+                  td Weight
+                  td 528 lsb / 239 kg wet
+                tr
+                  td Weight Distribution, Front:Rear
+                  td 48.5:51.5
+              thead
+                tr
+                  th Performance
+                  th
+              tbody
+                tr
+                  td 75 Metre Sprint
+                  td 4.409 s (wet track)
+                tr
+                  td Top Speed
+                  td 180 km/h
+                tr
+                  td Lateral Grip
+                  td 2.0 g
+                tr
+                  td Braking
+                  td 1.3 g
 
 
+
+  //- SPONSORSHIP SECTION
   hr
   .container.marketing
     // Three columns of text below the carousel
@@ -106,7 +200,7 @@ block content
       //col-lg-6
       .col-lg-4
         a(href='http://www.r410.ca/')
-          img.img-rounded(src='img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
+          img.img-rounded(src='/img/sponsors/r-410_sm.png', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 R-410 Holdings
         p
@@ -117,7 +211,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://engineersmachineshop.ca')
-          img.img-rounded(src='img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
+          img.img-rounded(src='/img/sponsors/prototypeequip_lg.png', alt='Generic placeholder image', width='350', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 Prototype Equipment Design
         p
@@ -128,7 +222,7 @@ block content
       //col-lg-3
       .col-lg-4
         a(href='http://eaglemachine.ca/')
-          img.img-rounded(src='img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
+          img.img-rounded(src='/img/sponsors/eaglemach_lg.jpg', alt='Generic placeholder image', height='80')
         //- img.img-rounded(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
         h3 Eagle Machine Inc.
         p
@@ -141,5 +235,3 @@ block content
   footer
     p(align="center")
       | © 2015 UVic Formula Motorsport. All Rights Reserved
-    p.pull-right
-      a(href='#top') Back to top

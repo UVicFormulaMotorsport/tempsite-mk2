@@ -34,6 +34,56 @@ body { padding-top: 50px; }
   box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.35);
 }
 
+/* Team Page */
+.teambox {
+  margin-bottom:40px;
+}
+
+.teampic {
+  box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.25);
+}
+
+
+
+/* Car Page */
+.carblock {
+  margin: 0 0 3em 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  display: block;
+}
+.carblock img {
+  width:100%;
+  border-radius:8px
+}
+
+
+/* Partner Page */
+.title {
+
+}
+
+.platinum {
+
+}
+
+.gold {
+
+}
+
+.silver {
+
+}
+
+.bronze {
+
+}
+
+.steel {
+
+}
 
 /* WIRECARE CUSTOM */
 img.wirecare{
