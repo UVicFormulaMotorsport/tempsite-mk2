@@ -19,13 +19,13 @@ block content
                 a(href='/') Home
               li.dropdown.active
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Partners
+                  | Sponsors
                   span.caret
                 ul.dropdown-menu
                   li.active
-                    a(href='/becomeapartner/') Become a Partner
+                    a(href='/becomeasponsor/') Become a Sponsor
                   li
-                    a(href='/partners/') UV16 Partners
+                    a(href='/sponsors/') UV16 Sponsors
 
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
@@ -42,29 +42,13 @@ block content
                 a(href='/contact/') Contact
 
 
-  .row(style='margin-left:20%;margin-right:20%;margin-top:20px')
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-twitter.social-media-button(href="https://twitter.com/uvicfsae")
-        span.fa.fa-twitter
-        |  Twitter
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-facebook.social-media-button(href="https://www.facebook.com/UVicFSae/")
-        span.fa.fa-facebook
-        |  Facebook
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-instagram.social-media-button(href="https://www.instagram.com/uvicfsae/")
-        span.fa.fa-instagram
-        |  Instagram
-    .col-xs-6.col-sm-3(style='margin-bottom:10px')
-      a.btn.btn-block.btn-social.btn-flickr.social-media-button(href="https://www.flickr.com/photos/uvicfsae/albums")
-        span.fa.fa-flickr
-        |  Flickr
+  include _socialmedia.jade
 
 
   .container.marketing
     .row
       .col-xs-12
-        h1(style="color:black;text-align:center;text-decoration:underline") How to become a Partner
+        h1(style="color:black;text-align:center;text-decoration:underline") How to become a Sponsor
         br
         br
       .col-md-6.col-lg-4

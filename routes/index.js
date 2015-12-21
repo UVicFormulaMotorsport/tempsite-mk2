@@ -7,13 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET */
-router.get('/becomeapartner/', function(req, res, next) {
-  res.render('becomeapartner', { title: 'UVic FSAE | Become A Partner' });
+router.get('/becomeasponsor/', function(req, res, next) {
+  res.render('becomeasponsor', { title: 'UVic FSAE | Become A Sponsor' });
 });
 
 /* GET */
-router.get('/partners/', function(req, res, next) {
-  res.render('partners', { title: 'UVic FSAE | UV16 Partners' });
+router.get('/sponsors/', function(req, res, next) {
+  res.render('sponsors', { title: 'UVic FSAE | UV16 Sponsors' });
 });
 
 /* GET */
