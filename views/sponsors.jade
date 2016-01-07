@@ -41,21 +41,46 @@ block content
               li
                 a(href='/contact/') Contact
 
-  include _socialmedia.jade
+  //- include _socialmedia.jade
+
+  div(style="box-shadow: 0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;margin-top:20px;padding-bottom:20px",width="100%")
+    .container.marketing
+      .row
+        .col-sm-6.sponsors
+          .row
+            .col-xs-12
+              h1(style="color:black;text-align:center;")
+                img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
+              hr
+            .col-xs-12.titlesponsor
+              h1(style="color:black;text-align:center;")
+                | This could be you!
+              br
+              br
+        .col-sm-6(style="color:black;background-color:#eeeeee;margin-top:20px;margin-bottom:10px;border-radius:20px;")
+          h2(style="text-align:center;margin-bottom:0;")
+            | Thank you sponsors for your support!
+          br
+          h4(style="text-align:center;margin-top:0;")
+            | We look forward to your further support this upcoming race season.
+          br
+          h5(style="text-align:center;padding-left:5%;padding-right:5%")
+            | The UVic Formula Motorsport team is made   possible through generous support from our sponsors. Our sponsors provide valuable resources, expertise and parts to help create outstanding engineers and business students with extensive technical experience and effective managerial skills.
+
 
   // TITLE
-  div(style="box-shadow: 0px -10px 14px rgba(0,0,0,0.4),0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;margin-top:20px;",width="100%")
-    .container.marketing.sponsors
-      .row
-        .col-xs-12
-          h1(style="color:black;text-align:center;")
-            img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
-          hr
-        .col-xs-12.titlesponsor
-          h1(style="color:black;text-align:center;")
-            | This could be you!
-          br
-          br
+  //- div(style="box-shadow: 0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;margin-top:20px;",width="100%")
+  //-   .container.marketing.sponsors
+  //-     .row
+  //-       .col-xs-12
+  //-         h1(style="color:black;text-align:center;")
+  //-           img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
+  //-         hr
+  //-       .col-xs-12.titlesponsor
+  //-         h1(style="color:black;text-align:center;")
+  //-           | This could be you!
+  //-         br
+  //-         br
 
   // PLATINUM
   div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
