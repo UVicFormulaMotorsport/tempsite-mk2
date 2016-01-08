@@ -31,10 +31,14 @@ router.get('/aboutcomp/', function(req, res, next) {
   res.render('comp', { title: 'UVic FSAE | The Competition' });
 });
 
-
 /* GET */
 router.get('/contact/', function(req, res, next) {
   res.render('contact', { title: 'UVic FSAE | Contact Us' });
+});
+
+/* GET */
+router.get('/render/', function(req, res, next) {
+  res.render('render', { title: 'UVic FSAE | Render' });
 });
 
 
