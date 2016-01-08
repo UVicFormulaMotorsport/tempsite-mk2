@@ -97,6 +97,18 @@ body { padding-top: 50px; }
   height:100px;
 }
 
+
+/* Become a sponsor page */
+#sponsorlevels,#sponsorlevels th{
+  text-align: center;
+}
+#sponsorlevels .header{
+  width: 100px;
+}
+#sponsorlevels .fa.fa-check {
+  color: green;
+}
+
 /* WIRECARE CUSTOM */
 img.wirecare{
     border-radius:50%;
