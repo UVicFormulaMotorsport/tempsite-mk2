@@ -43,38 +43,45 @@ block content
               li
                 a(href='/contact/') Contact
 
-  include _socialmedia.jade
+  .container.marketing
+    .row
+      .col-md-12(style="color:black;background-color:#eeeeee;margin-top:20px;margin-bottom:10px;border-radius:20px;padding-left:3%;padding-right:3%")
+        h2(style="text-align:center;") So who are we and what do we do?
+        h5
+          | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
+        h5
+          | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
 
 
-  .row(style='margin-left:15%;margin-right:15%')
-    .col-md-12
-      h2 So who are we and what do we do?
-      h5
-        | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
-      h5
-        | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
-    .col-md-6
-      p
-        strong Acceleration:
-        br
-        | A 75 meter straight course where shifting wins the competition.
-      p
-        strong Skid Pad:
-        br
-        | Performance through a “figure 8″ as quickly as possible to test lateral G-forces.
-    .col-md-6
-      p
-        strong Autocross:
-        br
-        | A single, timed lap around a coned course consisting of many tight corners and slaloms to test the overall mobility of the car.
-      p
-        strong Endurance:
-        br
-        | A 22 km race in which drivers switch half way through. Taking place on an autocross type course, this race is pure torture on the car! And for those that survive, a fuel economy test is administered at the end of the race.
+      .col-xs-12(style='padding-left:5%;padding-right:5%')
 
-    .col-xs-12
-      h4(style="text-align:center")
-        | Please <a href="/contact/">Contact Us</a> if you want to know more!
+        img(src="/img/team2015.jpg" style="max-width:100%")
+        br
+        br
+      .col-sm-12(style='padding-left:10%;padding-right:10%')
+        table.table.table-hover
+          tbody
+            tr
+              td
+                strong Acceleration:
+              td A 75 meter straight course where shifting wins the competition.
+            tr
+              td
+                strong Skid Pad:
+              td Performance through a “figure 8″ as quickly as possible to test lateral G-forces.
+            tr
+              td
+                strong Autocross:
+              td A single, timed lap around a coned course consisting of many tight corners and slaloms to test the overall mobility of the car.
+            tr
+              td
+                strong Endurance:
+              td A 22 km race in which drivers switch half way through. Taking place on an autocross type course, this race is pure torture on the car! And for those that survive, a fuel economy test is administered at the end of the race.
+
+      .col-xs-12
+        br
+        h4(style="text-align:center")
+          | Please <a href="/contact/">Contact Us</a> if you want to know more!
 
 
   include _sponsors.jade
