@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../tempsite');
+var app = require('../website');
 var debug = require('debug')('tempsite-mk2:server');
 var http = require('http');
 
