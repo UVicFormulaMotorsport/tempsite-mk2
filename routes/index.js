@@ -17,6 +17,11 @@ router.get('/sponsors/', function(req, res, next) {
 });
 
 /* GET */
+router.get('/indisponsors/', function(req, res, next) {
+  res.render('indisponsors', { title: 'UVic FSAE | Individual Sponsors'});
+});
+
+/* GET */
 router.get('/aboutcar/', function(req, res, next) {
   res.render('car', { title: 'UVic FSAE | The Car' });
 });
