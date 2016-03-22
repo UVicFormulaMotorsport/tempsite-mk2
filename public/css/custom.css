@@ -125,3 +125,8 @@ img.wirecare:hover{
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
 }
+
+.marketing .col-md-6 {
+    margin-bottom: 20px;
+    text-align: center;
+}
