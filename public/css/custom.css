@@ -3,8 +3,8 @@ body { padding-top: 50px; }
 .carousel .container {background-color: #0c5c98;}
 .carousel .item {background-color: #0c5c98;}
 .carouseltext{
-  background-color: rgba(115, 115, 115, .7);
-  border-radius: 20px;
+  /*background-color: rgba(115, 115, 115, .7);*/
+  /*border-radius: 20px;*/
   box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);
 }
 
