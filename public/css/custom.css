@@ -8,6 +8,10 @@ body { padding-top: 50px; }
   box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);
 }
 
+.front-page {
+  font-size: 25px;
+}
+
 .uvic-edge {
   height: 7.2rem;
   repeat-x;
