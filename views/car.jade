@@ -16,9 +16,9 @@ block content
               img(src='/img/logo_invert.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
-              li
+              li.front-page
                 a(href='/') Home
-              li.dropdown
+              li.dropdown.front-page
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                   | Sponsors
                   span.caret
@@ -30,7 +30,7 @@ block content
                   li
                     a(href='/indisponsors/') Individual Sponsors
 
-              li.dropdown.active
+              li.dropdown.active.front-page
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                   | About
                   span.caret
@@ -43,7 +43,7 @@ block content
                     a(href='/aboutteam/') The Team
                   li
                     a(href='/aboutcomp/') The Competition
-              li
+              li.front-page
                 a(href='/contact/') Contact
 
   .container
@@ -62,6 +62,11 @@ block content
         .row
           .col-xs-12
             section.widget.thumbnails
+
+              h3(style="font-weight:800;") 2016 Car:
+              .col-xs-12.carblock
+                img(src='/img/UV16car.jpg', alt='UV16')
+
               h3(style="font-weight:800;") 2015 Car:
               .col-xs-12.carblock
                 img(src='/img/car2015-2.jpg', alt='UV15')
@@ -82,7 +87,7 @@ block content
         // Content
         #content
           section.last
-            h3(style="font-weight:800;") 2015 Car Information
+            h3(style="font-weight:800;") 2016 Car Information
             table.default
               thead
                 tr
@@ -91,17 +96,17 @@ block content
               tbody
                 tr
                   td Car Number
-                  td 119
+                  td 21
                 tr
                   td Color
-                  td Black and red two tone
+                  td White with blue/red/yellow stripes
                 tr
                   td Frame
                   td 4130 Chromoly steel space frame
                 tr
                   td Aero
                   td
-                    | Carbon Fibre: 3-Piece Body, Front and Rear 4-Element Wings, Diffuser, and 2 Sidepods
+                    | Carbon Fibre: 3-Piece Body, 3-Element Front Wing, 4-Element Read Wing, Diffuser, and 2 Sidepods
                 tr
                   td Suspension
                   td
@@ -112,19 +117,19 @@ block content
                     | In house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
                 tr
                   td Engine
-                  td Honda CBR 600 F4I with MegaSquirt MS3 ECM
+                  td Honda CBR 600 F4I with Liferacing F88RX
                 tr
                   td Power/Torque
                   td 95 HP @ 12500 RPM/54 ft·lbs @ 8250 RPM
                 tr
                   td Fuel
-                  td Pump 94 Octane
+                  td 100 Octane Race
                 tr
                   td Transmission
                   td 6-speed Sequential
                 tr
                   td Shifter
-                  td Electro-pneumatic, button actuated shifting system resulting in sub-100ms shifts
+                  td Paddle shifting system
                 tr
                   td Final Drive
                   td #520 chain, 11:44 ratio
@@ -144,19 +149,19 @@ block content
               tbody
                 tr
                   td Wheelbase
-                  td 63″
+                  td 62″
                 tr
                   td Track, Front/Rear
-                  td 47.5″/44.5″
+                  td 50″/48.97″
                 tr
                   td Length
-                  td 107.4″
+                  td 88.98″
                 tr
                   td Weight
-                  td 528 lbs / 239 kg wet
+                  td 668 lbs / 303 kg
                 tr
                   td Weight Distribution, Front:Rear
-                  td 48.5:51.5
+                  td 48:52
               thead
                 tr
                   th Performance
@@ -164,16 +169,16 @@ block content
               tbody
                 tr
                   td 75 Metre Sprint
-                  td 4.409 s (wet track)
+                  td 4.459 s
                 tr
                   td Top Speed
-                  td 140 km/h
+                  td 150 km/h
                 tr
                   td Lateral Grip
-                  td 2.0 g
+                  td 2.2 g
                 tr
                   td Braking
-                  td 1.3 g
+                  td 1.4 g
 
 
 

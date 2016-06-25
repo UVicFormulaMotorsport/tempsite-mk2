@@ -15,9 +15,9 @@ block content
               img(src='/img/logo_invert.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
-              li
+              li.front-page
                 a(href='/') Home
-              li.dropdown.active
+              li.dropdown.active.front-page
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                   | Sponsors
                   span.caret
@@ -29,7 +29,7 @@ block content
                   li.active
                     a(href='/indisponsors/') Individual Sponsors
 
-              li.dropdown
+              li.dropdown.front-page
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                   | About
                   span.caret
@@ -42,7 +42,7 @@ block content
                     a(href='/aboutteam/') The Team
                   li
                     a(href='/aboutcomp/') The Competition
-              li
+              li.front-page
                 a(href='/contact/') Contact
 
   include _socialmedia.jade
