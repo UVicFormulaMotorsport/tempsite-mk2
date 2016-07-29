@@ -3,7 +3,7 @@ extends _layout
 block content
   .navbar-wrapper
     .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
+      nav.navbar.navbar-default.navbar-fixed-top
         .container
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -12,7 +12,7 @@ block content
               span.icon-bar
               span.icon-bar
             a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
+              img(src='/img/logo.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
               li.active.front-page
@@ -47,7 +47,7 @@ block content
 
   //Carousel
   //==================================================
-  #myCarousel.carousel.slide(data-ride='carousel' data-interval="8000" style='margin-bottom:0px')
+  #myCarousel.carousel.slide(data-ride='carousel' data-interval="8000" style='margin-bottom:0px; height:50%;')
     //- Indicators
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to='0')
@@ -55,39 +55,14 @@ block content
       li(data-target='#myCarousel', data-slide-to='2')
     .carousel-inner(role='listbox')
       .item.uvic-carousel.active
-        img.first-slide(src='/img/UV16front1.jpg', alt='First slide', style="object-fit:cover;")
-        .container
-          //- img.first-slide(src='img/slide1.png', alt='First slide', align="center")
-          .carousel-caption
-            span(style="display:inline-block;")
-              .carouseltext(style="padding-left:20px;padding-right:20px;")
-                //- h1 How do we build it?
-              p
-                a.btn.btn-lg.btn-primary.carouseltext(style="padding-left:20px;padding-right:20px;" href='/aboutcar/', role='button')
-                  | About The Car
-      .item.uvic-carousel
-        img.first-slide(src='/img/UV16oblique3.jpg', alt='First slide', style="object-fit:cover;")
-        //- img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
-        .container
-          .carousel-caption
+        img.first-slide(src='/img/UV16front1.jpg', alt='First slide', style="object-fit: cover; height: 800px;")
 
-            span(style="display:inline-block;")
-              .carouseltext(style="padding-left:20px;padding-right:20px;")
-                //- h1 Want to know how we compete?
-              p
-                a.btn.btn-lg.btn-primary.carouseltext(style="padding-left:20px;padding-right:20px;" href='/aboutcomp/', role='button')
-                  | About The Competition
-      .item.uvic-carousel
-        img.first-slide(src='/img/UV16teamphoto1.jpg', alt='First slide', style="object-fit:cover;")
-        //- img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
-        .container
-          .carousel-caption
-            span(style="display:inline-block;")
-              .carouseltext(style="padding-left:20px;padding-right:20px;")
-                //- h1 We are a fun student team!
-              p
-                a.btn.btn-lg.btn-primary.carouseltext(style="padding-left:20px;padding-right:20px;" href='/aboutteam/', role='button')
-                  | About The Team
+      //.item.uvic-carousel
+      //  img.first-slide(src='/img/UV16oblique3.jpg', alt='First slide', style="object-fit:cover;")
+
+      //.item.uvic-carousel
+      //  img.first-slide(src='/img/UV16teamphoto1.jpg', alt='First slide', style="object-fit:cover;")
+
     a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
       span.sr-only Previous
@@ -95,20 +70,15 @@ block content
       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
       span.sr-only Next
 
-  div.uvic-edge
+  //div.uvic-edge
 
-  include _socialmedia.jade
+  //include _socialmedia.jade
 
   //Index Text
   //==================================================
   
   .row(style='margin-left:15%;margin-right:15%')
     .col-md-12
-      h5
-        | The UVic Formula Motorsport team is made up of Engineering, Business, Computer Science, and other students from the University of Victoria who collaborate to design and build an open wheel race car. They compete annually in the world's largest collegiate design competition, Formula SAE (Society of Automotive Engineers). A few hundred pages of rules provide restrictions, ensuring both safety and fairness, much like professional racing and industry.
-      h5
-        | The competition puts all aspects of the cars to the test, through both static and dynamic events. The static events evaluate the design, cost analysis, and marketing plan, so careful preparation is imperative. Four dynamic events (acceleration, skid pad, autocross, and endurance) test the car's performance and reliability.
-      h4(style="text-align:center")
-        | Please <a href="/contact/">Contact Us</a> if you want to know more!
+
 
   include _sponsors.jade

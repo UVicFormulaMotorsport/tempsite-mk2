@@ -1,7 +1,7 @@
 body { padding-top: 50px; }
 .carousel-control.left, .carousel-control.right {background-image: none;}
 .carousel .container {background-color: #0c5c98;}
-.carousel .item {background-color: #0c5c98;}
+.carousel .item {background-color: #0c5c98; height: 800px;}
 .carouseltext{
   /*background-color: rgba(115, 115, 115, .7);*/
   /*border-radius: 20px;*/
@@ -9,7 +9,7 @@ body { padding-top: 50px; }
 }
 
 .front-page {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .uvic-edge {
