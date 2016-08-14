@@ -3,8 +3,8 @@ extends _layout
 block content
   .navbar-wrapper
     .container
-      nav.navbar.navbar-default.navbar-fixed-top
-        .container
+      nav.navbar.navbar-default.navbar-fixed-top(style="height: 75px;")
+        .container(style="height: 75px;")
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
               span.sr-only Toggle navigation
@@ -15,36 +15,20 @@ block content
               img(src='/img/logo.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
+
               li.active.front-page
                 a(href='/') Home
-              li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become a Sponsor
-                  li
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
-
-              li.dropdown.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/aboutcar/') The Car
-                  li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
-                  li
-                    a(href='/aboutteam/') The Team
-                  li
-                    a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/aboutteam/') The Team
+              li.front-page
+                a(href='/aboutcar/') The Car
+              li.front-page
+                a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
               li.front-page
                 a(href='/contact/') Contact
-
+                
   //Carousel
   //==================================================
   #myCarousel.carousel.slide(data-ride='carousel' data-interval="8000" style='margin-bottom:0px; height:50%;')
@@ -57,11 +41,11 @@ block content
       .item.uvic-carousel.active
         img.first-slide(src='/img/UV16front1.jpg', alt='First slide', style="object-fit: cover; height: 800px;")
 
-      //.item.uvic-carousel
-      //  img.first-slide(src='/img/UV16oblique3.jpg', alt='First slide', style="object-fit:cover;")
+      .item.uvic-carousel
+        img.first-slide(src='/img/UV16oblique3.jpg', alt='First slide', style="object-fit:cover; height: 800px;")
 
-      //.item.uvic-carousel
-      //  img.first-slide(src='/img/UV16teamphoto1.jpg', alt='First slide', style="object-fit:cover;")
+      .item.uvic-carousel
+        img.first-slide(src='/img/UV16teamphoto1.jpg', alt='First slide', style="object-fit:cover; height: 800px;")
 
     a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -76,9 +60,28 @@ block content
 
   //Index Text
   //==================================================
-  
-  .row(style='margin-left:15%;margin-right:15%')
-    .col-md-12
+
+  .row
+
+      .col-lg-2
+      .col-lg-4
+        .row
+          .col-lg-12
+            h3.overtext What We Do
+            a(href='http://eaglemachine.ca/')
+              img.img-responsive(src='/img/Speedway_autocross/autoCross1.jpg', height='400', style="display:block; margin: 30px 0px auto auto;")
+        .row
+          .col-lg-12
+            h3.overtext Our Team
+            a(href='http://eaglemachine.ca/')
+              img.img-responsive(src='/img/teamAtWork.jpg', height='400', style="display:block; margin: 30px 0px auto auto;")
+      .col-lg-4
+        // This section
+        .fb-page(data-href='https://www.facebook.com/UVicFSae/', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-height='1000', data-width='500', style="display:block; margin: 30px auto;")
+          blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/UVicFSae/')
+            a(href='https://www.facebook.com/UVicFSae/') UVic Formula Motorsport
+
+      .col-lg-2
 
 
   include _sponsors.jade
