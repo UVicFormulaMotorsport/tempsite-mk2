@@ -3,7 +3,7 @@ extends _layout
 block content
   .navbar-wrapper
     .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
+      nav.navbar.navbar-default.navbar-fixed-top
         .container
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -12,81 +12,133 @@ block content
               span.icon-bar
               span.icon-bar
             a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
+              img(src='/img/logo.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
+
               li.front-page
                 a(href='/') Home
-              li.dropdown.active.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become a Sponsor
-                  li.active
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
-
-              li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/aboutcar/') The Car
-                  li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
-                  li
-                    a(href='/aboutteam/') The Team
-                  li
-                    a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/aboutteam/') The Team
+              li.front-page
+                a(href='/aboutcar/') The Car
+              li.front-page
+                a(href='/aboutcomp/') The Competition
+              li.active.front-page
+                a(href='/sponsors/') Sponsorship
               li.front-page
                 a(href='/contact/') Contact
 
-  //- include _socialmedia.jade
+  .container-fluid
+    .row
+      img.img-responsive(src='/img/Speedway_autocross/autoCross2.jpg' style="object-fit:cover; height:800px; width:100%;")
 
-  div(style="box-shadow: 0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;margin-top:20px;padding-bottom:20px",width="100%")
+      .col-lg-2
+      .col-lg-8
+        // Sponsorship Title
+        .row
+          .col-lg-12(style="background-color: #afafaf;")
+            h1(style="color:black; text-align:center;")
+              | Sponsorship Packages
+        // Steel / Bronze / Silver
+        .row
+          .col-lg-4
+            h1(style="color:black; text-align:center;")
+              | Steel
+            ul
+              h3
+                | Item 1
+              h3
+                | Item 2
+              h3
+                | Item 3
+            h2(style="text-align: center")
+              | Cost
+
+          .col-lg-4
+            h1(style="color:black; text-align:center;")
+              | Bronze
+            ul
+              h3
+                | Item 1
+              h3
+                | Item 2
+              h3
+                | Item 3
+            h2(style="text-align: center")
+              | Cost
+
+          .col-lg-4
+            h1(style="color:black; text-align:center;")
+              | Silver
+            ul
+              h3
+                | Item 1
+              h3
+                | Item 2
+              h3
+                | Item 3
+            h2(style="text-align: center")
+              | Cost
+
+        // Gold / Plat
+        .row
+          .col-lg-2
+          .col-lg-4
+            h1(style="color:black; text-align:center;")
+              | Gold
+            ul
+              h3
+                | Item 1
+              h3
+                | Item 2
+              h3
+                | Item 3
+            h2(style="text-align: center")
+              | Cost
+          .col-lg-4
+            h1(style="color:black; text-align:center;")
+              | Plat
+            ul
+              h3
+                | Item 1
+              h3
+                | Item 2
+              h3
+                | Item 3
+            h2(style="text-align: center")
+              | Cost
+
+          .col-lg-2
+      .col-lg-2
+
+  // Current Sponsors Title
+
+  // Title Sponsor
+  div
     .container.marketing
       .row
         .col-sm-12.sponsors
           .row
-            .col-xs-12
+            .col-lg-12
               h1(style="color:black;text-align:center;")
-                img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
+                img(src="/img/sponsors/logos/title.png" style="border-radius:30px; max-height:80px")
               hr
-            .col-xs-12.titlesponsor
+            .col-lg-12.titlesponsor
               h1(style="color:black;text-align:center;")
                 | This could be you!
               br
               br
 
-
-
-  // TITLE
-  //- div(style="box-shadow: 0px 10px 14px rgba(0,0,0,0.4);margin-bottom:10px;margin-top:20px;",width="100%")
-  //-   .container.marketing.sponsors
-  //-     .row
-  //-       .col-xs-12
-  //-         h1(style="color:black;text-align:center;")
-  //-           img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:100px")
-  //-         hr
-  //-       .col-xs-12.titlesponsor
-  //-         h1(style="color:black;text-align:center;")
-  //-           | This could be you!
-  //-         br
-  //-         br
-
   // PLATINUM
-  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+  div
     .container.marketing.sponsors
       .row
-        .col-xs-12
+        .col-lg-12
           h1(style="color:black;text-align:center;")
             img(src="/img/sponsors/logos/platinum.png")
           hr
-        .col-xs-12.platinumsponsor
+        .col-lg-12.platinumsponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.crp-usa.net/')
               img(src='/img/sponsors/crpusa_med.jpg')
@@ -99,14 +151,14 @@ block content
 
 
   // GOLD
-  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+  div
     .container.marketing.sponsors
       .row
-        .col-xs-12
-          h1(style="color:black;text-align:center;")
+        .col-lg-12
+          h1(style="color:black; text-align:center;")
             img(src="/img/sponsors/logos/gold.png")
           hr
-        .col-xs-12.goldsponsor
+        .col-lg-12.goldsponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.r410.ca/')
               img(src='/img/sponsors/r-410_sm.png')
@@ -120,14 +172,14 @@ block content
               img(src='/img/sponsors/foremancnc_med.png')
 
   // SILVER
-  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+  div
     .container.marketing.sponsors
       .row
-        .col-xs-12
+        .col-lg-12
           h1(style="color:black;text-align:center;")
             img(src="/img/sponsors/logos/silver.png")
           hr
-        .col-xs-12.silversponsor
+        .col-lg-12.silversponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.adriennesteagarden.com/').silverspecial
               img(src='/img/sponsors/adrienne_med.jpg')
@@ -146,14 +198,14 @@ block content
 
 
   // BRONZE
-  div(style="box-shadow: 0px 10px  14px rgba(0,0,0,0.4);margin-bottom:10px;",width="100%")
+  div
     .container.marketing.sponsors
       .row
-        .col-xs-12
+        .col-lg-12
           h1(style="color:black;text-align:center;")
             img(src="/img/sponsors/logos/bronze.png")
           hr
-        .col-xs-12.bronzesponsor
+        .col-lg-12.bronzesponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.seastarsolutions.com/')
               img(src='/img/sponsors/seastar_sm.png')
@@ -180,14 +232,14 @@ block content
 
 
   // STEEL
-  div(style="margin-bottom:10px;",width="100%")
-    .container.marketing.sponsors(style="margin-bottom:10px;",width="100%")
+  div
+    .container.marketing.sponsors
       .row
-        .col-xs-12
+        .col-lg-12
           h1(style="color:black;text-align:center;")
             img(src="/img/sponsors/logos/steel.png")
           hr
-        .col-xs-12.steelsponsor
+        .col-lg-12.steelsponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.empireds.com/')
               img(src='/img/sponsors/dynamicstructures_med.png')
@@ -225,4 +277,4 @@ block content
               img(src='/img/sponsors/western_med.png')
             a
               img(src='/img/sponsors/DaveHay_med.png')
-
+   //
