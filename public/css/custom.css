@@ -9,7 +9,7 @@ body { padding-top: 50px; }
 }
 
 .front-page {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .uvic-edge {
@@ -85,6 +85,10 @@ body { padding-top: 50px; }
   height:130px;
 }
 
+.platinumsponsor .platspecial img{
+  height: 110px;
+}
+
 .goldsponsor a img{
   height:120px;
 }
@@ -103,6 +107,10 @@ body { padding-top: 50px; }
 
 .steelsponsor a img{
   height:100px;
+}
+
+.steelsponsor .steelspecial img{
+  height:50px;
 }
 
 
