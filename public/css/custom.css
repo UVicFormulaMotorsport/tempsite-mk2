@@ -166,6 +166,17 @@ a.darken:hover h3 {
   margin-right: 30px;
 }
 
+.bordered {
+  border-style: solid;
+  border-radius: 10px;
+
+}
+
+.packages {
+  margin: 15px 0px 0px 0px;
+
+}
+
 .titlesponsor a img{
   height:100px;
 }
