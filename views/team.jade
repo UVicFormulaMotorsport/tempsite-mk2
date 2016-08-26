@@ -1,233 +1,1 @@
-extends _layout
-
-block content
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li.front-page
-                a(href='/') Home
-              li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become a Sponsor
-                  li
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
-
-              li.dropdown.active.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/aboutcar/') The Car
-                  li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
-                  li.active
-                    a(href='/aboutteam/') The Team
-                  li
-                    a(href='/aboutcomp/') The Competition
-              li.front-page
-                a(href='/contact/') Contact
-
-
-  .container.marketing
-    .row
-      //Title
-      .col-xs-12
-        h1(style="color:black;text-align:center;text-decoration:underline") System Leads
-        br
-        br
-
-      // First row
-      .col-lg-2
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Wilson Hay', width='180', height='180')
-        h2 Wilson Hay
-        h4
-          strong
-            | Technical Team Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Tecnical Project Consultation
-          br
-          | Team Coordination
-          br
-          | System Integration
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Josef Svorkdal', width='180', height='180')
-        h2 Josef Svorkdal
-        h4
-          strong
-            | Project Manager
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Project Management
-          br
-          | Team Coordination
-          br
-          | Time Management
-      .col-lg-2
-
-    .row
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Kyle Mulzet', width='140', height='140')
-        h2 Kyle Mulzet
-        h4
-          strong
-            | Powertrain Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Engine Performance Design
-          br
-          | ECU Calibration
-          br
-          | Traction & Launch Control
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Matt Cameron', width='140', height='140')
-<<<<<<< HEAD
-        h2 Matt Cameron
-=======
-        h2 Josef Svorkdal
->>>>>>> 7f93d916403cbb9ba104825cee3aa9c4e1a32d83
-        h4
-          strong
-            | Aerodynamics Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Vehicle Aerodynamics
-          br
-          | Composites
-          br
-          | Aesthetics
-
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Peter de Schepper', width='140', height='140')
-        h2 Peter de Schepper
-        h4
-          strong
-            | Driver Controls Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Steering, Braking, & Shifting
-          br
-          | Data Analysis
-          br
-          | Driver Training
-
-    .row
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Ryan Vorster', width='140', height='140')
-        h2 Ryan Vorster
-        h4
-          strong
-            | Vehicle Dynamics Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Vehicle Dynamics Simulation
-          br
-          | Suspension Design and Manufacturing
-          br
-          | Tire Modelling
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Darryl Ring', width='140', height='140')
-        h2 Darryl Ring
-        h4
-          strong
-            | Electrical Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | ECU & DAQ
-          br
-          | Emergency Shut Offs
-          br
-          | Batteries
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Zachary Van Galen', width='140', height='140')
-        h2 Zachary Van Galen
-        h4
-          strong
-            | Administration Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Administration
-          br
-          | Sponsorship
-    .row
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Sean Burt', width='140', height='140')
-        h2 Sean Burt
-        h4
-          strong
-            | Software Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Website
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='none', width='140', height='140')
-        h2 Open to be filled
-        h4
-          strong
-            | Fluids Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Lubrication
-          br
-          | Radiator & Cooling
-          br
-          | Fuel
-
-      //- .col-md-6.col-lg-4.teambox
-      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
-      //-   h2 noname
-      //-   h4
-      //-     strong
-      //-       | Drivetrain Lead
-      //-   hr(style="margin-top:0;margin-bottom:0;")
-      //-   p
-      //-     | Differential
-      //-     br
-      //-     | Final Drive
-      //-     br
-      //-     | Drive Axles
-
-      //- .col-md-6.col-lg-4.teambox
-      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
-      //-   h2 noname
-      //-   h4
-      //-     strong
-      //-       | Business Lead
-      //-   hr(style="margin-top:0;margin-bottom:0;")
-      //-   p
-      //-     | Sponsorship
-      //-     br
-      //-     | External Relations
-      //-     br
-      //-     | Grant Acquisition
-
-
-  //- include _socialmedia.jade
-  include _sponsors.jade
-
-
+extends _layoutblock content  .navbar-wrapper    .container      nav.navbar.navbar-default.navbar-fixed-top        .container          .navbar-header            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')              span.sr-only Toggle navigation              span.icon-bar              span.icon-bar              span.icon-bar            a(href='/')              img(src='/img/logo.png' height="50px")          #navbar.navbar-collapse.collapse            ul.nav.navbar-nav.navbar-right              li.active.front-page                a(href='/') Home              li.front-page                a(href='/aboutteam/') The Team              li.front-page                a(href='/aboutcar/') The Car              li.front-page                a(href='/aboutcomp/') The Competition              li.front-page                a(href='/sponsors/') Sponsorship              li.front-page                a(href='/contact/') Contact  .container.marketing    .row      //Title      .col-xs-12        h1(style="color:black;text-align:center;text-decoration:underline") System Leads        br        br      // First row      .col-lg-2      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Wilson Hay', width='180', height='180')        h2 Wilson Hay        h4          strong            | Technical Team Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Tecnical Project Consultation          br          | Team Coordination          br          | System Integration      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Josef Svorkdal', width='180', height='180')        h2 Josef Svorkdal        h4          strong            | Project Manager        hr(style="margin-top:0;margin-bottom:0;")        p          | Project Management          br          | Team Coordination          br          | Time Management      .col-lg-2    .row      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Kyle Mulzet', width='140', height='140')        h2 Kyle Mulzet        h4          strong            | Powertrain Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Engine Performance Design          br          | ECU Calibration          br          | Traction & Launch Control      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Matt Cameron', width='140', height='140')        h2 Josef Svorkdal        h4          strong            | Aerodynamics Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Vehicle Aerodynamics          br          | Composites          br          | Aesthetics      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Peter de Schepper', width='140', height='140')        h2 Peter de Schepper        h4          strong            | Driver Controls Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Steering, Braking, & Shifting          br          | Data Analysis          br          | Driver Training    .row      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Ryan Vorster', width='140', height='140')        h2 Ryan Vorster        h4          strong            | Vehicle Dynamics Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Vehicle Dynamics Simulation          br          | Suspension Design and Manufacturing          br          | Tire Modelling      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Darryl Ring', width='140', height='140')        h2 Darryl Ring        h4          strong            | Electrical Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | ECU & DAQ          br          | Emergency Shut Offs          br          | Batteries      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Zachary Van Galen', width='140', height='140')        h2 Zachary Van Galen        h4          strong            | Administration Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Administration          br          | Sponsorship    .row      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Sean Burt', width='140', height='140')        h2 Sean Burt        h4          strong            | Software Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Website      .col-md-6.col-lg-4.teambox        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='none', width='140', height='140')        h2 Open to be filled        h4          strong            | Fluids Lead        hr(style="margin-top:0;margin-bottom:0;")        p          | Lubrication          br          | Radiator & Cooling          br          | Fuel      //- .col-md-6.col-lg-4.teambox      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')      //-   h2 noname      //-   h4      //-     strong      //-       | Drivetrain Lead      //-   hr(style="margin-top:0;margin-bottom:0;")      //-   p      //-     | Differential      //-     br      //-     | Final Drive      //-     br      //-     | Drive Axles      //- .col-md-6.col-lg-4.teambox      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')      //-   h2 noname      //-   h4      //-     strong      //-       | Business Lead      //-   hr(style="margin-top:0;margin-bottom:0;")      //-   p      //-     | Sponsorship      //-     br      //-     | External Relations      //-     br      //-     | Grant Acquisition  //- include _socialmedia.jade  include _sponsors.jade
