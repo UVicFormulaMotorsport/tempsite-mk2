@@ -3,7 +3,7 @@ extends _layout
 block content
   .navbar-wrapper
     .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
+      nav.navbar.navbar-default.navbar-fixed-top
         .container
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -12,36 +12,20 @@ block content
               span.icon-bar
               span.icon-bar
             a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
+              img(src='/img/logo.png' height="50px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
+
               li.front-page
                 a(href='/') Home
-              li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become a Sponsor
-                  li
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
-
-              li.dropdown.active.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/aboutcar/') The Car
-                  li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
-                  li
-                    a(href='/aboutteam/') The Team
-                  li.active
-                    a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/aboutteam/') The Team
+              li.front-page
+                a(href='/aboutcar/') The Car
+              li.front-page.active
+                a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
               li.front-page
                 a(href='/contact/') Contact
 
