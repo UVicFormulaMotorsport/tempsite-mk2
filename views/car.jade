@@ -30,37 +30,21 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
-  .row.titleImg
+  .titleImg
     img(src='/img/Speedway_autocross/autoCross2.jpg')
 
   // ABOUT THE CARS
-  .container
+  .container-fluid
     .row
-      .col-sm-4
-        .row
-          .col-xs-12
-            section.widget.thumbnails
-
-              h3(style="font-weight:800;") 2016 Car:
-              .col-xs-12.carblock
-                img(src='/img/UV16car.JPG', alt='UV16')
-
-              h3(style="font-weight:800;") 2015 Car:
-              .col-xs-12.carblock
-                img(src='/img/car2015-2.jpg', alt='UV15')
-
-              h3(style="font-weight:800;") 2014 Car:
-              .col-xs-12.carblock
-                img(src='/img/car2014.jpg', alt='UV14')
-
-              h3(style="font-weight:800;") 2013 Car:
-              .col-xs-12.carblock
-                img(src='/img/car2013.jpg', alt='UV13')
-
-              h3(style="font-weight:800;") 2012 Car:
-              .col-xs-12.carblock
-                img(src='/img/car2012.jpg', alt='UV12')
-
+      .col-lg-2
+      .col-lg-3.the-car
+        img(src='/img/UV16oblique2.jpg', alt='UV16')
+      .col-lg-5
+        h1
+          | The drive for this years car was
+      .col-lg-2
+    .row
+      .col-lg-2
       .col-sm-8
         // Content
         #content
@@ -157,7 +141,26 @@ block content
                 tr
                   td Braking
                   td 1.5 g
-
-
-
+        .col-lg-2
+    .row
+      .col-lg-2
+      .col-xs-8
+        section.widget.thumbnails
+          .col-lg-3
+            h3(style="font-weight:800;") 2015
+            .col-xs-12.past-cars
+              img(src='/img/car2015-2.jpg', alt='UV15')
+          .col-lg-3
+            h3(style="font-weight:800;") 2014
+            .col-xs-12.past-cars
+              img(src='/img/car2014.jpg', alt='UV14')
+          .col-lg-3
+            h3(style="font-weight:800;") 2013
+            .col-xs-12.past-cars
+              img(src='/img/car2013.jpg', alt='UV13')
+          .col-lg-3
+            h3(style="font-weight:800;") 2012
+            .col-xs-12.past-cars
+              img(src='/img/car2012.jpg', alt='UV12')
+      .col-lg-2
   include _sponsors.jade
