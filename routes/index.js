@@ -27,6 +27,11 @@ router.get('/aboutcar/', function(req, res, next) {
 });
 
 /* GET */
+router.get('/car2015/', function(req, res, next) {
+  res.render('car2015', { title: 'UVic FSAE | The Car 2015' });
+});
+
+/* GET */
 router.get('/aboutteam/', function(req, res, next) {
   res.render('team', { title: 'UVic FSAE | The Team' });
 });
