@@ -177,6 +177,9 @@ a.darken:hover h3 {
 .sponsors h1 {
   max-height: 70px;
   text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 50px;
 
 }
 
