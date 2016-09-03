@@ -3,7 +3,7 @@ extends _layout
 block content
   .navbar-wrapper
     .container
-      nav.navbar.navbar-default.navbar-fixed-top
+      nav.navbar.navbar-default.navbar-fixed-top(data-spy="affix" data-offset-top="600")
         .container
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -12,10 +12,9 @@ block content
               span.icon-bar
               span.icon-bar
             a(href='/')
-              img(src='/img/logo.png' height="50px")
+              img(src='/img/logo.png' height="55px")
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
-
               li.active.front-page
                 a(href='/') Home
               li.front-page
@@ -26,7 +25,7 @@ block content
                 a(href='/aboutcomp/') The Competition
               li.front-page
                 a(href='/sponsors/') Sponsorship
-              li.front-page
+              li.front-page(style="margin-right: 10px;")
                 a(href='/contact/') Contact
 
   //Carousel
@@ -62,7 +61,6 @@ block content
   //==================================================
 
   .row
-
       .col-lg-2
 
       .col-lg-4
