@@ -1,36 +1,36 @@
 extends _layout
 
+// Nav Bar
+//====================================================================================================================
 block content
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-default.navbar-fixed-top(data-spy="affix" data-offset-top="600")
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo.png' height="55px")
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li.active.front-page
-                a(href='/') Home
-              li.front-page
-                a(href='/aboutteam/') The Team
-              li.front-page
-                a(href='/aboutcar/') The Car
-              li.front-page
-                a(href='/aboutcomp/') The Competition
-              li.front-page
-                a(href='/sponsors/') Sponsorship
-              li.front-page(style="margin-right: 10px;")
-                a(href='/contact/') Contact
+
+
+  .container-fluid(style="background-color:#F44336; color:#ffffff; height:100px;")
+    h4
+      | this is some text
+
+  nav.navbar.navbar-default(data-spy="affix" data-offset-top="100" margin-bottom="0")
+    .navbar-header
+      a(href='/')
+        img(src='/img/logo.png' height="55px")
+    ul.nav.navbar-nav.navbar-right
+      li.active.front-page
+        a(href='/') Home
+      li.front-page
+        a(href='/aboutteam/') The Team
+      li.front-page
+        a(href='/aboutcar/') The Car
+      li.front-page
+        a(href='/aboutcomp/') The Competition
+      li.front-page
+        a(href='/sponsors/') Sponsorship
+      li.front-page(style="margin-right: 0px;")
+        a(href='/contact/') Contact
 
   //Carousel
-  //==================================================
-  #myCarousel.carousel.slide(data-ride='carousel' data-interval="8000" style='margin-bottom:0px; height:50%;')
+  //====================================================================================================================
+
+  #myCarousel.carousel.slide(data-ride='carousel' data-interval="8000" style='margin-bottom:0px; height:50%; padding: 0px -15px;')
     //- Indicators
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to='0')
@@ -53,35 +53,31 @@ block content
       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
       span.sr-only Next
 
-  //div.uvic-edge
-
-  //include _socialmedia.jade
-
   //Index Text
-  //==================================================
+  //====================================================================================================================
+  .container-fluid
+    .row
+        .col-xs-2
+        .col-lg-4
+          .row
+            .col-lg-12
+              a(href='/aboutcomp/').darken
+                img.img-responsive(src='/img/Speedway_autocross/autoCross1.jpg', height='400', style="width: 100%; margin: 30px 0 0 0;")
+                h3.overtext What We Do
+          .row
+            .col-lg-12
+              a(href='/aboutteam/').darken
+                img.img-responsive(src='/img/teamAtWork.jpg', height='400', style="width: 100%; margin: 30px 0 0 0;")
+                h3.overtext Our Team
+        .col-lg-4
 
-  .row
-      .col-lg-2
+          // Facebook Feed
+          .fb-page(data-href='https://www.facebook.com/UVicFSae/', data-tabs='timeline', data-small-header='false',
+          data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-height='660', data-width='500', style="display:block; margin: 30px auto;")
+            blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/UVicFSae/')
+              a(href='https://www.facebook.com/UVicFSae/') UVic Formula Motorsport
 
-      .col-lg-4
-        .row
-          .col-lg-12
-            a(href='/aboutcomp/').darken
-              img.img-responsive(src='/img/Speedway_autocross/autoCross1.jpg', height='400', style="display:block; margin: 30px 0px auto auto;")
-              h3.overtext What We Do
-        .row
-          .col-lg-12
-            a(href='/aboutteam/').darken
-              img.img-responsive(src='/img/teamAtWork.jpg', height='400', style="display:block; margin: 30px 0px auto auto;")
-              h3.overtext Our Team
-      .col-lg-4
-
-        // Facebook Feed
-        .fb-page(data-href='https://www.facebook.com/UVicFSae/', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-height='1000', data-width='500', style="display:block; margin: 30px auto;")
-          blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/UVicFSae/')
-            a(href='https://www.facebook.com/UVicFSae/') UVic Formula Motorsport
-
-      .col-lg-2
+        .col-xs-2
 
 
   include _sponsors.jade

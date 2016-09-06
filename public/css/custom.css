@@ -1,8 +1,8 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL CSS FOR PAGE/FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 body {
   font-family: "Hiragino Sans", Arial, Helvetica, serif;
-  padding-top: 55px;
 }
+
 h1 {
   font-family: tunga, "Hiragino Sans", Arial, Helvetica, serif;
   color: black;
@@ -16,6 +16,13 @@ h4 {
   color: black;
 }
 
+
+.pic-align {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px auto;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ PAGE TITLE CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .titleImg {
@@ -43,21 +50,22 @@ h4 {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV BAR CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.navbar-fixed-top {
+.navbar-default {
   background-color: white;
   border-radius: 0 !important;
   border-bottom: 2px solid lightgray;
+  width: 100%;
 }
 
-.navbar-fixed-top .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
   color: #333;
   border-top: 1px solid transparent;
 }
 
-.navbar-fixed-top .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a,
-.navbar-fixed-top .navbar-nav > .active > a:hover,
-.navbar-fixed-top .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   background-color: #fff;
   color: #0f4bac;
   border-top: 3px solid #0f4bac;
@@ -74,7 +82,7 @@ h4 {
 }
 
 .affix + .container-fluid {
-  padding-top: 70px;
+  padding-top: 0px;
 }
 
 /* Carousel */
@@ -136,22 +144,16 @@ a.darken:hover h3 {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SOCIAL MEDIA ICONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.social-icons {
-  position: absolute;
-  right: 0;
-}
-
-.social-icons ul li {
-  float: right;
-  align-items: right;
-  display: inline-block;
-  list-style: none;
-}
-.social-icons img{
-  display: inline-block;
+.social-icons img {
   padding: 5px;
   height: 30px;
-  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  float: right;
+}
+
+.social-icons h1 {
+  left: 0;
 }
 
 
