@@ -322,16 +322,16 @@ img.wirecare:hover{
 
 .competition-main {
   font-size: 60px;
+  font-weight: bold;
 
-}
-
-.competition-description {
-  padding: 0px 0px 30px 10px;
 }
 
 .competition-title {
   border-bottom: 1px solid lightgrey;
-
+  font-weight: 700;
+}
+.competition-description {
+  padding: 0px 0px 30px 10px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE SPECIFIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
