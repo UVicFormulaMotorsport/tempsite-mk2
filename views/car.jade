@@ -2,35 +2,38 @@ extends _layout
 
 block content
   link(rel='stylesheet', href='/css/car.css')
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-default.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo.png' height="55px")
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-
-              li.front-page
-                a(href='/') Home
-              li.front-page
-                a(href='/aboutteam/') The Team
-              li.front-page.active
-                a(href='/aboutcar/') The Car
-              li.front-page
-                a(href='/aboutcomp/') The Competition
-              li.front-page
-                a(href='/sponsors/') Sponsorship
-              li.front-page(style="margin-right: 10px;")
-                a(href='/contact/') Contact
-
-
+  .container-fluid(style="background-color: black; color:#ffffff; height:35px; padding: 0px -30px; margin: 0px -10px;" )
+    .row
+      .col-xs-6
+        h5(color= "white")
+          | 250 721-6014 | fsae (at) engr.uvic.ca
+      .col-xs-6.social-icons-banner
+        a(href='https://www.flickr.com/photos/uvicfsae/albums/')
+          img(src='/img/icons/Flickr-color-lg.png')
+        a(href='https://www.instagram.com/uvicfsae/')
+          img(src='/img/icons/Instagram-color-lg.png')
+        a(href='https://twitter.com/uvicfsae')
+          img(src='/img/icons/Twitter-color-lg.png')
+        a(href='https://www.facebook.com/UVicFSae/')
+          img(src='/img/icons/Facebook-color-lg.png')
+  .nav-wrapper
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px;')
+      .navbar-header
+        a(href='/')
+          img(src='/img/logo.png' height="55px")
+      ul.nav.navbar-nav.navbar-right
+        li.front-page
+          a(href='/') Home
+        li.front-page
+          a(href='/aboutteam/') The Team
+        li.front-page.active
+          a(href='/aboutcar/') The Car
+        li.front-page
+          a(href='/aboutcomp/') The Competition
+        li.front-page
+          a(href='/sponsors/') Sponsorship
+        li.front-page(style="margin-right: 10px;")
+          a(href='/contact/') Contact
   // ABOUT THE CARS
   .container-fluid
     .row
@@ -44,7 +47,7 @@ block content
         // Content
         #content
           section.last
-            h3(style="font-weight:800;") The UV16
+            h3(style="font-weight:800;") UV16
             table.default
               thead
                 tr
@@ -144,11 +147,13 @@ block content
           .col-lg-3
             h3(style="font-weight:800;") 2012
             .col-xs-12.past-cars
-              img(src='/img/car2012.jpg', alt='UV12')
+              a(href='/car2012/')
+                img(src='/img/car2012.jpg', alt='UV12')
           .col-lg-3
             h3(style="font-weight:800;") 2013
             .col-xs-12.past-cars
-              img(src='/img/car2013.jpg', alt='UV13')
+              a(href='/car2013/')
+                img(src='/img/car2013.jpg', alt='UV13')
           .col-lg-3
             h3(style="font-weight:800;") 2014
             .col-xs-12.past-cars

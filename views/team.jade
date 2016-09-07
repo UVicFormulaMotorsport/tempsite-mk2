@@ -1,44 +1,56 @@
-<<<<<<< HEAD
 extends _layout
 
 block content
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-default.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo.png' height="55px")
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
+  .container-fluid(style="background-color: black; color:#ffffff; height:35px; padding: 0px -30px; margin: 0px -10px;" )
+    .row
+      .col-xs-6
+        h5(color= "white")
+          | 250 721-6014 | fsae (at) engr.uvic.ca
+      .col-xs-6.social-icons-banner
+        a(href='https://www.flickr.com/photos/uvicfsae/albums/')
+          img(src='/img/icons/Flickr-color-lg.png')
+        a(href='https://www.instagram.com/uvicfsae/')
+          img(src='/img/icons/Instagram-color-lg.png')
+        a(href='https://twitter.com/uvicfsae')
+          img(src='/img/icons/Twitter-color-lg.png')
+        a(href='https://www.facebook.com/UVicFSae/')
+          img(src='/img/icons/Facebook-color-lg.png')
+  .nav-wrapper
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px;')
+      .navbar-header
+        a(href='/')
+          img(src='/img/logo.png' height="55px")
+      ul.nav.navbar-nav.navbar-right
+        li.front-page
+          a(href='/') Home
+        li.front-page.active
+          a(href='/aboutteam/') The Team
+        li.front-page
+          a(href='/aboutcar/') The Car
+        li.front-page
+          a(href='/aboutcomp/') The Competition
+        li.front-page
+          a(href='/sponsors/') Sponsorship
+        li.front-page(style="margin: 0px 10px;")
+          a(href='/contact/') Contact
 
-              li.front-page
-                a(href='/') Home
-              li.front-page.active
-                a(href='/aboutteam/') The Team
-              li.front-page
-                a(href='/aboutcar/') The Car
-              li.front-page
-                a(href='/aboutcomp/') The Competition
-              li.front-page
-                a(href='/sponsors/') Sponsorship
-              li.front-page(style="margin-right: 10px;")
-                a(href='/contact/') Contact
-
-  img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:600px; width:100%;")
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:800px; width:100%;")
+      .col-lg-2
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1
+          | Introduction Topic
+        h4
+          | The goal for our team is to build and design not only a small formula car, but also build a team who
+      .col-lg-2
   .container.marketing
     .row
-      //Title
-      .col-xs-12
-        //h1(style="color:black;text-align:center;text-decoration:underline") System Leads
-        br
-        br
-
       // First row
       .col-lg-2
       .col-md-6.col-lg-4.teambox
@@ -207,9 +219,4 @@ block content
       //-     br
       //-     | Grant Acquisition
 
-
-  //- include _socialmedia.jade
   include _sponsors.jade
-
-
->>>>>>> origin

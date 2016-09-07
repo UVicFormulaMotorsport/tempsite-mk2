@@ -32,15 +32,44 @@ block content
           a(href='/aboutcomp/') The Competition
         li.front-page
           a(href='/sponsors/') Sponsorship
-        li.front-page(style="margin-right: 10px;")
+        li.front-page(style="margin: 0px 10px;")
           a(href='/contact/') Contact
+          
+  .navbar-wrapper
+    .container
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/')
+              img(src='/img/logo.png' height="55px")
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+
+              li.front-page
+                a(href='/') Home
+              li.front-page
+                a(href='/aboutteam/') The Team
+              li.front-page.active
+                a(href='/aboutcar/') The Car
+              li.front-page
+                a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page(style="margin-right: 10px;")
+                a(href='/contact/') Contact
+
 
   // ABOUT THE CARS
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/car2014.jpg' style="object-fit:cover; height:800px; width:100%;")
+        img.img-responsive(src='/img/car2013.jpg' style="object-fit:cover; height:800px; width:100%;")
       .col-lg-2
     .row
       .col-lg-2
@@ -48,7 +77,7 @@ block content
         // Content
         #content
           section.last
-            h3(style="font-weight:800;") UV14
+            h3(style="font-weight:800;") The UV13
             table.default
               thead
                 tr
@@ -148,13 +177,11 @@ block content
           .col-lg-3
             h3(style="font-weight:800;") 2012
             .col-xs-12.past-cars
-              a(href='/car2012/')
-                img(src='/img/car2012.jpg', alt='UV12')
+              img(src='/img/car2012.jpg', alt='UV12')
           .col-lg-3
             h3(style="font-weight:800;") 2013
             .col-xs-12.past-cars
-              a(href='/car2013/')
-                img(src='/img/car2013.jpg', alt='UV13')
+              img(src='/img/car2013.jpg', alt='UV13')
           .col-lg-3
             h3(style="font-weight:800;") 2015
             .col-xs-12.past-cars
