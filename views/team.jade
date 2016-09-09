@@ -45,15 +45,10 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
-
   .container.marketing
+    br
+    br
     .row
-      //Title
-      .col-xs-12
-        h1(style="color:black;text-align:center;text-decoration:underline") System Leads
-        br
-        br
-
       // First row
       .col-lg-2
       .col-md-6.col-lg-4.teambox
@@ -170,6 +165,21 @@ block content
           | Sponsorship
 
       .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Lewis Janzen', width='140', height='140')
+        h2 Lewis Janzen
+        h4
+          strong
+            | Frame Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Overseeing Chassis
+          br
+          | Design and Fabrication
+
+
+    .row
+
+      .col-md-6.col-lg-4.teambox
         img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Sean Burt', width='140', height='140')
         h2 Sean Burt
         h4
@@ -178,52 +188,7 @@ block content
         hr(style="margin-top:0;margin-bottom:0;")
         p
           | Website
-    .row
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='none', width='140', height='140')
-        h2 To be filled
-        h4
-          strong
-            | Fluids Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Lubrication
-          br
-          | Radiator & Cooling
-          br
-          | Fuel
-
-      //- .col-md-6.col-lg-4.teambox
-      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
-      //-   h2 noname
-      //-   h4
-      //-     strong
-      //-       | Drivetrain Lead
-      //-   hr(style="margin-top:0;margin-bottom:0;")
-      //-   p
-      //-     | Differential
-      //-     br
-      //-     | Final Drive
-      //-     br
-      //-     | Drive Axles
-
-      //- .col-md-6.col-lg-4.teambox
-      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
-      //-   h2 noname
-      //-   h4
-      //-     strong
-      //-       | Business Lead
-      //-   hr(style="margin-top:0;margin-bottom:0;")
-      //-   p
-      //-     | Sponsorship
-      //-     br
-      //-     | External Relations
-      //-     br
-      //-     | Grant Acquisition
-
-
-  //- include _socialmedia.jade
+        
   include _sponsors.jade
 
 

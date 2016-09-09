@@ -101,6 +101,10 @@ body { padding-top: 50px; }
   height:150px;
 }
 
+.silversponsor .silversmall img {
+  height: 100px;
+}
+
 .bronzesponsor a img{
   height:100px;
 }
