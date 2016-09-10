@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src:url('../fonts/montserrat/Montserrat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+#main {
+    font-family: 'Montserrat-Regular';
+}
+
+body {
+    font-family: 'Montserrat-Regular', "Times New Roman";
+}

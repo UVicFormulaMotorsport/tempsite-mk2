@@ -1,10 +1,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL CSS FOR PAGE/FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-body {
-  font-family: "Hiragino Sans", Arial, Helvetica, serif;
-}
 
 h1 {
-  font-family: tunga, "Hiragino Sans", Arial, Helvetica, serif;
   color: black;
 }
 
@@ -322,7 +318,7 @@ img.wirecare:hover{
 
 .competition-main {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 800;
 
 }
 
