@@ -5,9 +5,9 @@ block content
   .container-fluid(style="background-color: black; color:#ffffff; height:35px; padding: 0px -30px; margin: 0px -10px;" )
     .row
       .col-xs-6
-        h5(color= "white")
+        h5(style="color:white; padding-left:10px;")
           | 250 721-6014 | fsae (at) engr.uvic.ca
-      .col-xs-6.social-icons-banner
+      .col-xs-6.social-icons-banner(style="padding-right: 18px;")
         a(href='https://www.flickr.com/photos/uvicfsae/albums/')
           img(src='/img/icons/Flickr-color-lg.png')
         a(href='https://www.instagram.com/uvicfsae/')
@@ -16,12 +16,13 @@ block content
           img(src='/img/icons/Twitter-color-lg.png')
         a(href='https://www.facebook.com/UVicFSae/')
           img(src='/img/icons/Facebook-color-lg.png')
+
   .nav-wrapper
-    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px;')
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px; padding-left: 10px;')
       .navbar-header
         a(href='/')
           img(src='/img/logo.png' height="55px")
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right(style="padding-right: 10px;")
         li.front-page
           a(href='/') Home
         li.front-page
@@ -32,22 +33,24 @@ block content
           a(href='/aboutcomp/') The Competition
         li.front-page
           a(href='/sponsors/') Sponsorship
-        li.front-page(style="margin-right: 10px;")
+        li.front-page
           a(href='/contact/') Contact
+
+
   // ABOUT THE CARS
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:800px; width:100%;")
+        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:600px; width:100%;")
       .col-lg-2
 
     .row
       .col-lg-2
       .col-lg-8
         h1(style="font-weight:800;")
-          | Introduction Topic
-        h4
+          | Year's Goal
+        p
           | The goal for our car was to...
       .col-lg-2
     .row

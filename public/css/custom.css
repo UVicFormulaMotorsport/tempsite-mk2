@@ -1,17 +1,21 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL CSS FOR PAGE/FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+h1, h2, h3, h4 {
+  color: black;
+}
+
 h1 {
-  color: black;
+  font-weight: 800;
 }
 
-h2 {
-  color: black;
+p {
+  line-height: 150%;
+  font-size: 18px;
 }
 
-h4 {
-  color: black;
+body {
+  overflow-x: hidden;
 }
-
 
 .pic-align {
   display: block;
@@ -211,11 +215,6 @@ a.darken:hover h3 {
 
 }
 
-.sponsors img {
-  max-height: 70px;
-
-}
-
 .sponsors a img{
 
   height:120px;
@@ -249,24 +248,28 @@ a.darken:hover h3 {
 
 }
 
-.titlesponsor a img{
-  height:100px;
+.titlesponsor p a img{
+  height:120px;
 }
 
-.platinumsponsor a img{
-  height:80px;
+.platinumsponsor img{
+  height:130px;
 }
 
 .platinumsponsor .platspecial img{
-  height: 110px;
+  height: 90px;
 }
 
 .goldsponsor a img{
-  height:75px;
+  height:80px;
 }
 
 .silversponsor a img{
-  height:70px;
+  height:65px;
+}
+
+.silversponsor .silversmall img {
+  height: 60px;
 }
 
 .silversponsor .silverspecial img{
@@ -274,7 +277,7 @@ a.darken:hover h3 {
 }
 
 .bronzesponsor a img{
-  height:65px;
+  height: 60px;
 }
 
 .steelsponsor a img{
@@ -324,10 +327,11 @@ img.wirecare:hover{
 
 .competition-title {
   border-bottom: 1px solid lightgrey;
-  font-weight: 700;
+
 }
 .competition-description {
-  padding: 0px 0px 30px 10px;
+  padding: 0px 10px 30px 10px;
+  font-size: 18px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE SPECIFIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -4,9 +4,9 @@ block content
   .container-fluid(style="background-color: black; color:#ffffff; height:35px; padding: 0px -30px; margin: 0px -10px;" )
     .row
       .col-xs-6
-        h5(color= "white")
+        h5(style="color:white; padding-left:10px;")
           | 250 721-6014 | fsae (at) engr.uvic.ca
-      .col-xs-6.social-icons-banner
+      .col-xs-6.social-icons-banner(style="padding-right: 18px;")
         a(href='https://www.flickr.com/photos/uvicfsae/albums/')
           img(src='/img/icons/Flickr-color-lg.png')
         a(href='https://www.instagram.com/uvicfsae/')
@@ -16,11 +16,11 @@ block content
         a(href='https://www.facebook.com/UVicFSae/')
           img(src='/img/icons/Facebook-color-lg.png')
   .nav-wrapper
-    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px;')
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px; padding-left: 10px;')
       .navbar-header
         a(href='/')
           img(src='/img/logo.png' height="55px")
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right(style="padding-right: 10px;")
         li.front-page
           a(href='/') Home
         li.front-page
@@ -31,18 +31,22 @@ block content
           a(href='/aboutcomp/') The Competition
         li.front-page
           a(href='/sponsors/') Sponsorship
-        li.front-page(style="margin-right: 10px;")
+        li.front-page
           a(href='/contact/') Contact
-
 
   .container-fluid
     .row
-      img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:800px; width:100%;")
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:600px; width:100%;")
+      .col-lg-2
+  .container-fluid
+    .row
       .col-lg-2
       .col-lg-8
         h1.competition-main
           | Michigan FSAE Competition
-        h4.competition-description
+        p.competition-description
           | Formula SAE is an international collegiate engineering competition for both undergraduate and graduate
           | students. The premise of the competition is the development of a small Formula-style race car. Each team
           | designs, builds, and tests a fully functional prototype based on a set of published rules. The purpose of
@@ -52,41 +56,41 @@ block content
 
         h1.competition-title
           | Design Presentation
-        h4.competition-description
+        p.competition-description
           | In the design event, we demonstrate our process, theory, calculations and simulations to judges from the
           | motorsports, automotive, and aerospace industries. While exhibiting different vehicle aspects we explain
           | our design development, data collection and overall engineering approach for critical systems and components.
 
         h1.competition-title
           | Acceleration
-        h4.competition-description
+        p.competition-description
           | The acceleration portion of this event consists of a 75 meter (246 foot) straight line track were the
           | vehicle is tested based on the elapsed time from start to finish.
 
         h1.competition-title
           | Skid Pad
-        h4.competition-description
+        p.competition-description
           | The objective of the skid pad test is to test the vehicle’s lateral acceleration and consistent-radius
           | turning capabilities. Drivers direct the vehicle through a figure eight patterned track in the shortest
           | amount of time possible.
 
         h1.competition-title
           | Autocross
-        h4.competition-description
+        p.competition-description
           | The autocross event tests the car and driver over numerous course types all in one track. The course includes straights, constant turns, hairpin turns, slaloms, chicanes, and multiple sequential turns. This event is scored based on the team's best elapsed time.
 
         h1.competition-title
           | Endurance and Efficiency
-        h4.competition-description
+        p.competition-description
           | The endurance and efficiency event tests the vehicle’s durability, reliability, and efficiency over a 22km track. This track is similar to the autocross event, though requires two drivers who switch at the 11km point. Unlike the other events, the two drivers total lap times and fuel consumption are counted cumulatively towards a total score. This event is highest weighted event often considered the best evaluation of overall performance.
         h1.competition-title
           | Business Presentation
-        h4.competition-description
+        p.competition-description
           | Our business team presents to a set of judges that evaluate the team’s business case. This case is based on the premise that we are an engineering team contracted by a manufacturing company to pitch our design and proposed marketing strategy for a weekend autocross racer. In this, we must show how the team’s plan can meet the demand of the target markets at a reasonable price.
 
         h1.competition-title
           | Cost Presentation
-        h4.competition-description
+        p.competition-description
           | We present our cost report, which is a full cost estimate of materials and processes, based on standardized cost tables, that would be involved in an actual production run. This event encourages us to incorporate cost-effective design and manufacturing methods in the vehicle development.
       .col-lg-2
   include _sponsors.jade

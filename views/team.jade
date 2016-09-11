@@ -4,9 +4,9 @@ block content
   .container-fluid(style="background-color: black; color:#ffffff; height:35px; padding: 0px -30px; margin: 0px -10px;" )
     .row
       .col-xs-6
-        h5(color= "white")
+        h5(style="color:white; padding-left:10px;")
           | 250 721-6014 | fsae (at) engr.uvic.ca
-      .col-xs-6.social-icons-banner
+      .col-xs-6.social-icons-banner(style="padding-right: 18px;")
         a(href='https://www.flickr.com/photos/uvicfsae/albums/')
           img(src='/img/icons/Flickr-color-lg.png')
         a(href='https://www.instagram.com/uvicfsae/')
@@ -16,11 +16,11 @@ block content
         a(href='https://www.facebook.com/UVicFSae/')
           img(src='/img/icons/Facebook-color-lg.png')
   .nav-wrapper
-    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px;')
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="35" style='margin-bottom:0px; padding-left: 10px;')
       .navbar-header
         a(href='/')
           img(src='/img/logo.png' height="55px")
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right(style="padding-right: 10px;")
         li.front-page
           a(href='/') Home
         li.front-page.active
@@ -31,22 +31,23 @@ block content
           a(href='/aboutcomp/') The Competition
         li.front-page
           a(href='/sponsors/') Sponsorship
-        li.front-page(style="margin: 0px 10px;")
+        li.front-page
           a(href='/contact/') Contact
+
 
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:800px; width:100%;")
+        img.img-responsive(src='/img/Speedway_autocross/autoCross3.jpg' style="object-fit:cover; height:600px; width:100%;")
       .col-lg-2
   .container-fluid(style="margin-bottom:50px;")
     .row
       .col-lg-2
       .col-lg-8
         h1(style="font-weight:800;")
-          | Introduction Topic
-        h4
+          | The UVic Formula Motorsports Team
+        p
           | The goal for our team is to build and design not only a small formula car, but also build a team who
       .col-lg-2
   .container.marketing
@@ -190,7 +191,7 @@ block content
         hr(style="margin-top:0;margin-bottom:0;")
         p
           | Website
-        
+
 
       //- .col-md-6.col-lg-4.teambox
       //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')

@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src:url('../fonts/montserrat/Montserrat-Regular.otf');
+    font-family: 'Montserrat-Light';
+    src:url('../fonts/montserrat/Montserrat-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
 #main {
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Light', Arial;
 }
 
 body {
-    font-family: 'Montserrat-Regular', "Times New Roman";
+    font-family: 'Montserrat-Light', "Times New Roman", Arial;
 }
