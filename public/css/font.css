@@ -32,4 +32,22 @@ p, a {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu-R', Serif, "Times New Roman", Arial;
+    color: black;
+}
+
+.front-page a {
+    font-family: 'Ubuntu-R', Serif, "Times New Roman", Arial;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+p {
+    line-height: 150%;
+    font-size: 16px;
+}
+
+a, td {
+    font-size: 16px;
 }

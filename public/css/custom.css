@@ -1,22 +1,5 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL CSS FOR PAGE/FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-h1, h2, h3, h4, h5 {
-  color: black;
-}
-
-h1 {
-  font-weight: 800;
-}
-
-p {
-  line-height: 150%;
-  font-size: 17px;
-}
-
-a, td {
-  font-size: 17px;
-}
-
 body {
   overflow-x: hidden;
 }
