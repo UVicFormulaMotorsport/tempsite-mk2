@@ -26,6 +26,10 @@ body {
     font-family: 'Kreon-Regular', Serif, "Times New Roman", Arial;
 }
 
+p, a {
+    font-family: 'Kreon-Regular', Serif, "Times New Roman", Arial;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Ubuntu-R', sans-serif, "Times New Roman", Arial;
 }
