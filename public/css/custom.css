@@ -281,15 +281,15 @@ a.darken:hover h3 {
 }
 
 .steelsponsor a img{
-  height:60px;
-}
-
-.steelsponsor .steelspecial img{
   height:50px;
 }
 
-.steelsponsor .steelspecial-2nd img{
+.steelsponsor .steelspecial img{
   height:40px;
+}
+
+.steelsponsor .steelspecial-2nd img{
+  height:30px;
 }
 
 

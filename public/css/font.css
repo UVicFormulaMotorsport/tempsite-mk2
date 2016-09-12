@@ -4,10 +4,28 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Kreon-Regular';
+    src:url('../fonts/kreon/Kreon-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-R';
+    src:url('../fonts/ubuntu/Ubuntu-R.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 #main {
-    font-family: 'Montserrat-Light', Arial;
+    font-family: 'Ubuntu-R', Arial;
 }
 
 body {
-    font-family: 'Montserrat-Light', "Times New Roman", Arial;
+    font-family: 'Kreon-Regular', Serif, "Times New Roman", Arial;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu-R', sans-serif, "Times New Roman", Arial;
 }
