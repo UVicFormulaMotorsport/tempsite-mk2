@@ -1,6 +1,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERAL CSS FOR PAGE/FONT ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: black;
 }
 
@@ -10,11 +10,11 @@ h1 {
 
 p {
   line-height: 150%;
-  font-size: 18px;
+  font-size: 17px;
 }
 
-a {
-  font-size: 16px;
+a, td {
+  font-size: 17px;
 }
 
 body {
