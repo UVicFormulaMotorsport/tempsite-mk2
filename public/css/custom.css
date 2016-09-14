@@ -76,6 +76,7 @@ body {
 
 /* Affix */
 .affix {
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -306,19 +307,12 @@ img.wirecare:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ COMPETITION SPECIFIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.competition-main {
-  font-size: 60px;
-  font-weight: 800;
-
-}
-
 .competition-title {
   border-bottom: 1px solid lightgrey;
 
 }
 .competition-description {
   padding: 0px 10px 30px 10px;
-  font-size: 18px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE SPECIFIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
