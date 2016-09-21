@@ -69,23 +69,23 @@ body {
   min-height: 59px;
 }
 
-/* car page */
-.nav-wrapper-2 {
-  min-height: 59px;
-}
-
 /* Affix */
+
+body {
+  position: relative;
+}
 .affix {
-  position: fixed;
-  top: 0;
+  top:0;
   width: 100%;
-  z-index: 9999;
+  z-index: 9999 !important;
+}
+.navbar {
+  margin-bottom: 0px;
 }
 
-.affix + .container-fluid {
-  padding-top: 0px;
-  z-index: 9999;
-
+.affix ~ .container-fluid {
+  position: relative;
+  top: 50px;
 }
 
 .social-icons-banner img {
