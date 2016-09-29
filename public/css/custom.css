@@ -37,6 +37,12 @@ body {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV BAR CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+
 .navbar-default {
   background-color: white;
   border-radius: 0 !important;
