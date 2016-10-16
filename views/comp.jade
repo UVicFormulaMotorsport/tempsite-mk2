@@ -34,8 +34,23 @@ block content
                 a(href='/') Home
               li.front-page
                 a(href='/aboutteam/') The Team
-              li.front-page
-                a(href='/aboutcar/') The Car
+
+              li.dropdown.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | The Car
+                  span
+                ul.dropdown-menu
+                  li
+                    a(href='/aboutcar/') 2016 Car
+                  li
+                    a(href='/car2015/') 2015 Car
+                  li
+                    a(href='/car2014/') 2014 Car
+                  li
+                    a(href='/car2013/') 2013 Car
+                  li
+                    a(href='/car2012/') 2012 Car
+
               li.front-page.active
                 a(href='/aboutcomp/') The Competition
               li.front-page
