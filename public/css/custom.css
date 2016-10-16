@@ -86,7 +86,12 @@ body {
   z-index: 9999 !important;
 }
 
-
+.dropdown-menu {
+  text-align: right;
+  
+  min-width: 100%;
+  white-space: nowrap;
+}
 
 .navbar {
   margin-bottom: 0px;
