@@ -54,8 +54,8 @@ body {
 
 .navbar-default .navbar-nav > li > a {
 
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 
 }
 
@@ -87,8 +87,8 @@ body {
 }
 
 .dropdown-menu {
-  text-align: right;
-  
+  text-align: center;
+
   min-width: 100%;
   white-space: nowrap;
 }
@@ -280,6 +280,10 @@ a.darken:hover h3 {
 
 .bronzesponsor a img{
   height: 60px;
+}
+
+.bronzesponsor .bspecial img{
+  height: 100px;
 }
 
 .steelsponsor a img{
