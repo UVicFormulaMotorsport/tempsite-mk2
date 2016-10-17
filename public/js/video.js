@@ -13,6 +13,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '100%',
     width: '100%',
+    startSeconds: 60,
     playerVars: {
       autoplay: 1,
       loop: 1,
