@@ -4,6 +4,16 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .pic-align {
   display: block;
   margin-left: auto;
@@ -75,6 +85,8 @@ body {
   min-height: 59px;
 }
 
+
+
 /* Affix */
 
 body {
@@ -88,10 +100,13 @@ body {
 
 .dropdown-menu {
   text-align: center;
-
   min-width: 100%;
   white-space: nowrap;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: white;
+}
+
 
 .navbar {
   margin-bottom: 0px;
@@ -250,20 +265,26 @@ a.darken:hover h3 {
 
 }
 
+
+
+.sponsors .img-responsive {
+  margin: 0 auto;
+}
+
 .titlesponsor p a img{
-  height:120px;
+  max-height:120px;
 }
 
 .platinumsponsor img{
-  height:130px;
+  max-height:130px;
 }
 
 .platinumsponsor .platspecial img{
-  height: 90px;
+  max-height: 90px;
 }
 
 .goldsponsor a img{
-  height:80px;
+  max-height:80px;
 }
 
 .silversponsor a img{

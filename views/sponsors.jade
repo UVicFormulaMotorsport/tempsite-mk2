@@ -58,63 +58,75 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
+  .container
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/sponsorpage/package2edit.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/sponsorpage/package2edit.jpg' style="object-fit:cover; height:600px; width:100%;")
+        h1(style="font-weight:800; font-size: 60px; text-align: center;")
+          | Sponsorship
+        p
+          | In order to complete a vehicle every year, we rely on donations and sponsorship from local, national, and
+          | international partners. We focus our expenses on necessary components like the frame, registration, tires,
+          | materials, and any improvements that yield the largest benefit for their cost.
+          | Though we have a lower budget than other top tier teams, we are able to continually improve our designs as we
+          | receive more contributions and as we improve as experienced students.
+        p
+          | We would like to thank all of our current sponsors, and any new sponsors for your contributions.
+          | By sponsoring our team, you not only allow us to continue to do what we love, but also allow the team to reach
+          | new levels. Each year we promote an experienced team who develop into industry leading engineers.
+          | All of this  would not be possible without your support.
+        p
+          | If you are interested in partnering with UVic Formula Motorsport, please contact us at
+          | uvic.fsae (at) gmail.com
       .col-lg-2
-  .container
-    .row
-      h1(style="font-weight:800; font-size: 60px; text-align: center;")
-        | Sponsorship
-      p
-        | In order to complete a vehicle every year, we rely on donations and sponsorship from local, national, and
-        | international partners. We focus our expenses on necessary components like the frame, registration, tires,
-        | materials, and any improvements that yield the largest benefit for their cost.
-        | Though we have a lower budget than other top tier teams, we are able to continually improve our designs as we
-        | receive more contributions and as we improve as experienced students.
-      p
-        | We would like to thank all of our current sponsors, and any new sponsors for your contributions.
-        | By sponsoring our team, you not only allow us to continue to do what we love, but also allow the team to reach
-        | new levels. Each year we promote an experienced team who develop into industry leading engineers.
-        | All of this  would not be possible without your support.
-      p
-        | If you are interested in partnering with UVic Formula Motorsport, please contact us at
-        | uvic.fsae (at) gmail.com
 
 
   // Current Sponsors Title
 
   // PLATINUM
+
+
+
+
   div
-    .container-fluid.sponsors
+    .container-fluid
+
       .row
         .col-lg-12
           h1
             | Platinum Sponsors
             //img(src="/img/sponsors/logos/platinum.png")
-          hr
+      hr
+    .container-fluid.sponsors
+      .row
         .col-lg-2
         .col-lg-8.platinumsponsor
           p(style="color:black;text-align:center;")
             a(href='http://www.crp-usa.net/' target="_blank")
-              img(src='/img/sponsors/crpusa_med.jpg')
+              img.img-responsi(src='/img/sponsors/crpusa_med.jpg')
             a(href='http://eaglemachine.ca/' target="_blank")
-              img(src='/img/sponsors/eaglemach_lg.jpg')
+              img.img-responsive(src='/img/sponsors/eaglemach_lg.jpg')
             a(href='http://engineersmachineshop.ca' target="_blank").platspecial
-              img(src='/img/sponsors/prototypeequip_lg.png')
+              img.img-responsive(src='/img/sponsors/prototypeequip_lg.png')
         .col-lg-2
 
   // GOLD
   div
-    .container-fluid.sponsors
+    .container-fluid
       .row
         .col-lg-12
           h1
             | Gold Sponsors
             //img(src="/img/sponsors/logos/gold.png")
           hr
+    .container-fluid.sponsors
+      .row
         .col-lg-2
         .col-lg-8.goldsponsor
           p(style="color:black;text-align:center;")
@@ -124,21 +136,23 @@ block content
               img(src='/img/sponsors/uvicengr_med.jpg')
             a(href='http://ess.uvic.ca/' target="_blank")
               img(src='/img/sponsors/uvicess_med.jpg')
-            a.silversmall
-              img(src='/img/sponsors/foremancnc_med.png')
             a(href='http://www.r410.ca/' target="_blank")
               img(src='/img/sponsors/r-410_sm.png')
+            a.silversmall
+              img.img-responsive(src='/img/sponsors/foremancnc_med.png')
         .col-lg-2
 
   // SILVER
   div
-    .container-fluid.sponsors
+    .container-fluid
       .row
         .col-lg-12
           h1
             | Silver Sponsors
             //img(src="/img/sponsors/logos/silver.png")
           hr
+    .container-fluid.sponsors
+      .row
         .col-lg-2
         .col-lg-8.silversponsor
           p(style="color:black;text-align:center;")
@@ -162,13 +176,15 @@ block content
 
   // BRONZE
   div
-    .container-fluid.sponsors
+    .container-fluid
       .row
         .col-lg-12
           h1
             | Bronze Sponsors
             //img(src="/img/sponsors/logos/bronze.png")
           hr
+    .container-fluid.sponsors
+      .row
         .col-lg-2
         .col-lg-8.bronzesponsor
           p(style="color:black;text-align:center;")
@@ -200,13 +216,15 @@ block content
 
   // STEEL
   div
-    .container-fluid.sponsors
+    .container-fluid
       .row
         .col-lg-12
           h1
             | Steel Sponsors
             //img(src="/img/sponsors/logos/steel.png")
           hr
+    .container-fluid.sponsors
+      .row
         .col-lg-2
         .col-lg-8.steelsponsor
           p(style="color:black;text-align:center;")
