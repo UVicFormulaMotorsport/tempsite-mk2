@@ -43,11 +43,13 @@ body {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV BAR CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
 }
-
+*/
 
 .navbar-default {
   background-color: white;
@@ -76,6 +78,10 @@ body {
   z-index: 9999;
 
 }
+
+
+
+
 /* main page */
 .nav-wrapper{
   min-height: 59px;
@@ -99,9 +105,12 @@ body {
   min-width: 100%;
   white-space: nowrap;
 }
+
+
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background-color: white;
 }
+
 
 
 .navbar {
