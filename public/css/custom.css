@@ -304,6 +304,10 @@ a.darken:hover h3 {
   height:90px;
 }
 
+.silversponsor .silversmall img {
+  height: 100px;
+}
+
 .bronzesponsor a img{
   height: 60px;
 }
