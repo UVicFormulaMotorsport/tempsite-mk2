@@ -1,58 +1,85 @@
 extends _layout
 
 block content
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
-          #navbar.navbar-collapse.collapse
+  header
+    .container-fluid(style="background-color: black; color:#ffffff; height:auto;")
+      .row
+        .col-xs-6
+          h5(style="color:white;")
+            | 250 721-6014 | fsae (at) engr.uvic.ca
+        .col-xs-6.social-icons-banner(style="padding-right: 4px;")
+          a(href='https://www.flickr.com/photos/uvicfsae/albums/' target="_blank")
+            img(src='/img/icons/Flickr-color-lg.png')
+          a(href='https://www.youtube.com/channel/UCZs6NRtl950DlijfmLDGZ0Q' target="_blank")
+            img(src='/img/icons/Youtube-color.png')
+          a(href='https://twitter.com/uvicfsae' target="_blank")
+            img(src='/img/icons/Twitter-color-lg.png')
+          a(href='https://www.facebook.com/UVicFSae/' target="_blank")
+            img(src='/img/icons/Facebook-color-lg.png')
+
+  .nav-wrapper
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="45" style='margin-bottom:0px;')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='#' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
               li.front-page
                 a(href='/') Home
-              li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become  Sponsor
-                  li
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
+              li.front-page
+                a(href='/aboutteam/') The Team
 
               li.dropdown.front-page
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | The Car
+                  span
                 ul.dropdown-menu
                   li
-                    a(href='/aboutcar/') The Car
+                    a(href='/aboutcar/') 2016 Car
                   li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
+                    a(href='/car2015/') 2015 Car
                   li
-                    a(href='/aboutteam/') The Team
+                    a(href='/car2014/') 2014 Car
                   li
-                    a(href='/aboutcomp/') The Competition
-              li.active.front-page
+                    a(href='/car2013/') 2013 Car
+                  li
+                    a(href='/car2012/') 2012 Car
+
+              li.front-page
+                a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page.active
                 a(href='/contact/') Contact
+
+
 
   //  Marketing messaging and featurettes
   //  ==================================================
   //  Wrap the rest of the page in another container to center all the content.
   .container
+
+
+
     .row
-      h1(style="color:black;text-align:center;text-decoration:underline") Contact Us
-      br
+      .col-sm-6(style="padding: 5px;")
+        h3 UVic Formula Motorsport Office
+        iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.6961546354405!2d-123.30944513394613!3d48.462359129250544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f71565056ec8b%3A0x729c851352353848!2sUVic+Formula+Motorsport+Office!5e0!3m2!1sen!2sca!4v1476986080249" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+      .col-sm-6(style="padding: 5px;")
+        h3 UVic Formula Motorsport Shop
+        iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.6961546354405!2d-123.30944513394613!3d48.462359129250544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f715166f03833%3A0xdf15d61b8d5c067!2sUVic+Formula+Motorsport+Shop!5e0!3m2!1sen!2sca!4v1476986344779" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+
+  .container
+    .row
       .col-sm-4
+        h2(style="color:black; font-weight:800;") Address
         p
           | UVic Formula SAE
           br
@@ -66,12 +93,10 @@ block content
           br
           | V8W 3P6
       .col-sm-4
+        h2(style="color:black; font-weight:800;") Office
         p
           strong Phone:
           |  250 721-6014
-          br
-          strong Fax (EOW Office):
-          |  250 721-8676
           br
           strong Office Location:
           |  Engineering Lab Wing (ELW) Room A108
@@ -79,13 +104,13 @@ block content
           strong E-Mail:
           |  "fsae (at) engr.uvic.ca"
       .col-sm-4
+        h2(style="color:black; font-weight:800;") Weekly Meetings
         p
-          | Join us at one of our weekly meetings or at our shop at the bottom of parking lot 5 by University House 2.
+          | Join us at one of our weekly meetings.
           br
           br
           strong Weekly Meetings:
-          |  Wednesdays at 6:30pm in Elliot building room 167
+          |  Wednesdays at 7:30pm in the Engineering and Computer Science building (ECS) room 104
 
-  include _socialmedia.jade
   include _sponsors.jade
 

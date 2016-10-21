@@ -22,6 +22,26 @@ router.get('/indisponsors/', function(req, res, next) {
 });
 
 /* GET */
+router.get('/car2012/', function(req, res, next) {
+  res.render('car2012', { title: 'UVic FSAE | The Car 2012' });
+});
+
+/* GET */
+router.get('/car2013/', function(req, res, next) {
+  res.render('car2013', { title: 'UVic FSAE | The Car 2013' });
+});
+
+/* GET */
+router.get('/car2014/', function(req, res, next) {
+  res.render('car2014', { title: 'UVic FSAE | The Car 2014' });
+});
+
+/* GET */
+router.get('/car2015/', function(req, res, next) {
+  res.render('car2015', { title: 'UVic FSAE | The Car 2015' });
+});
+
+/* GET */
 router.get('/aboutcar/', function(req, res, next) {
   res.render('car', { title: 'UVic FSAE | The Car' });
 });

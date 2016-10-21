@@ -1,48 +1,46 @@
 extends _layout
 
 block content
-  .navbar-wrapper
-    .container
-      nav.navbar.navbar-inverse.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/')
-              img(src='/img/logo_invert.png' height="50px")
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='/') Home
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Sponsors
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/becomeasponsor/') Become  Sponsor
-                  li
-                    a(href='/sponsors/') UV16 Sponsors
-                  li
-                    a(href='/indisponsors/') Individual Sponsors
+  header
+    .container-fluid(style="background-color: black; color:#ffffff; height:auto;")
+      .row
+        .col-xs-6
+          h5(style="color:white;")
+            | 250 721-6014 | fsae (at) engr.uvic.ca
+        .col-xs-6.social-icons-banner(style="padding-right: 4px;")
+          a(href='https://www.flickr.com/photos/uvicfsae/albums/')
+            img(src='/img/icons/Flickr-color-lg.png')
+          a(href='https://www.instagram.com/uvicfsae/')
+            img(src='/img/icons/Instagram-color-lg.png')
+          a(href='https://twitter.com/uvicfsae')
+            img(src='/img/icons/Twitter-color-lg.png')
+          a(href='https://www.facebook.com/UVicFSae/')
+            img(src='/img/icons/Facebook-color-lg.png')
 
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | About
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='/aboutcar/') The Car
-                  li
-                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
-                  li
-                    a(href='/aboutteam/') The Team
-                  li
-                    a(href='/aboutcomp/') The Competition
-              li
+  .nav-wrapper
+    nav.navbar.navbar-default(data-spy="affix" data-offset-top="45" style='margin-bottom:0px;')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='#' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page
+                a(href='/aboutteam/') The Team
+              li.front-page
+                a(href='/aboutcar/') The Car
+              li.front-page
+                a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
                 a(href='/contact/') Contact
 
   //  Marketing messaging and featurettes
@@ -60,5 +58,4 @@ block content
         br
         br
 
-  include _socialmedia.jade
   include _sponsors.jade
