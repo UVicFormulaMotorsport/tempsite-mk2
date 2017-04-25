@@ -142,12 +142,12 @@ body {
 .overtext {
     position: absolute;
     font-size: 30px;
-    color: #fff;
-    background-color: #0f0f0f;
+    color: #ffffff;
+
     top: 5%;
     left: 5%;
     padding: 0 5;
-    opacity: .8;
+    opacity: .9;
 }
 
 
@@ -161,12 +161,13 @@ a.darken {
 
 a.darken img,
 a.darken h3 {
-    display: block;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  text-shadow: 2px 2px 2px black;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 a.darken:hover img {
