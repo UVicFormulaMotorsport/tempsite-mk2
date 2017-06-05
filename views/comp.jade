@@ -18,7 +18,7 @@ block content
               li.front-page
                 a(href='/') Home
               li.front-page
-                a(href='/aboutteam/') The Team
+                a(href='/team/') The Team
 
               li.dropdown.front-page
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -26,7 +26,9 @@ block content
                   span
                 ul.dropdown-menu
                   li
-                    a(href='/aboutcar/') 2016 Car
+                    a(href='/car2017/') 2017 Car
+                  li
+                    a(href='/car2016/') 2016 Car
                   li
                     a(href='/car2015/') 2015 Car
                   li
@@ -37,7 +39,7 @@ block content
                     a(href='/car2012/') 2012 Car
 
               li.front-page.active
-                a(href='/aboutcomp/') The Competition
+                a(href='/comp/') The Competition
               li.front-page
                 a(href='/sponsors/') Sponsorship
               li.front-page
@@ -47,15 +49,7 @@ block content
     .row
       .col-lg-2
       .col-lg-8
-        .embed-responsive.embed-responsive-16by9
-          iframe.embed-responsive-item#player.youtube-player(width='1600', height='800', src="https://www.youtube.com/embed/ppUqUynRtII?" +
-          "autoplay=1" +
-          "&controls=1" +
-          "&loop=1" +
-          "&enablejsapi=1" +
-          "&start=85" +
-          "&playlist=ppUqUynRtII", frameborder='0', allowfullscreen='')
-        //img.img-responsive(src='/img/UV16/img1.jpg' style="object-fit:cover; height:600px; width:100%;")
+        img.img-responsive(src='/img/UV17/pano2.jpg' style="object-fit:cover; max-height:800px; min-height:300px; width:100%;")
       .col-lg-2
   .container-fluid
     .row
@@ -72,8 +66,6 @@ block content
           | student designs, cost breakdown and a business case. The dynamics events focuses on vehicle and driver
           | performance with five track events.
           br
-          br
-          | Congratulations to the 2016 winning team, Universitat Stuttgart, of Germany.
       .col-lg-2
 
     .row
@@ -176,4 +168,3 @@ block content
       .col-lg-2
 
   include _sponsors.jade
-

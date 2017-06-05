@@ -7,18 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET */
-router.get('/becomeasponsor/', function(req, res, next) {
-  res.render('becomeasponsor', { title: 'UVic FSAE | Become A Sponsor' });
-});
-
-/* GET */
 router.get('/sponsors/', function(req, res, next) {
-  res.render('sponsors', { title: 'UVic FSAE | UV16 Sponsors' });
-});
-
-/* GET */
-router.get('/indisponsors/', function(req, res, next) {
-  res.render('indisponsors', { title: 'UVic FSAE | Individual Sponsors'});
+  res.render('sponsors', { title: 'UVic FSAE | Our Sponsors' });
 });
 
 /* GET */
@@ -42,28 +32,28 @@ router.get('/car2015/', function(req, res, next) {
 });
 
 /* GET */
-router.get('/aboutcar/', function(req, res, next) {
-  res.render('car', { title: 'UVic FSAE | The Car' });
+router.get('/car2016/', function(req, res, next) {
+  res.render('car2016', { title: 'UVic FSAE | The Car 2016' });
 });
 
 /* GET */
-router.get('/aboutteam/', function(req, res, next) {
+router.get('/car2017/', function(req, res, next) {
+  res.render('car2017', { title: 'UVic FSAE | The Car 2017' });
+});
+
+/* GET */
+router.get('/team/', function(req, res, next) {
   res.render('team', { title: 'UVic FSAE | The Team' });
 });
 
 /* GET */
-router.get('/aboutcomp/', function(req, res, next) {
+router.get('/comp/', function(req, res, next) {
   res.render('comp', { title: 'UVic FSAE | The Competition' });
 });
 
 /* GET */
 router.get('/contact/', function(req, res, next) {
   res.render('contact', { title: 'UVic FSAE | Contact Us' });
-});
-
-/* GET */
-router.get('/render/', function(req, res, next) {
-  res.render('render', { title: 'UVic FSAE | Render' });
 });
 
 
